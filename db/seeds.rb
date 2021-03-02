@@ -16,3 +16,4 @@ Boraughs.create(name: "Hackney", area: "7,3591071", median_income: "29,400", pop
 # Companies
 
 Companies.create(id_boraughs: 1, name:"", address: "", year_trading: "", )
+
