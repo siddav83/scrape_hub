@@ -1,1 +1,14 @@
-// Specific CSS for your home-page
+$dark-purple: #020825;
+$light-purple: #7E2382;
+
+.home-main-banner {
+  height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(to top right, $dark-purple, $light-purple);
+  border-radius: 0 0 30% 30%;
+  // background-position-y: -1000px;
+}
+
+.home-banner-content {
+  color: white;
+}
