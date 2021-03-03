@@ -4,6 +4,8 @@ class BoroughsController < ApplicationController
 
   def index
     @boroughs = Borough.all
+    @boroughs = @boroughs.income_max(40000)
+    @boroughs = @boroughs.income_min(30000)
   end
 
   def show
@@ -30,7 +32,6 @@ class BoroughsController < ApplicationController
     @borough.destroy
     redirect_to root_path
   end
-
 
   private
 

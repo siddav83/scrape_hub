@@ -1,1 +1,6 @@
-boroughs
+<h1>London Boroughs | Gross Income</h1>
+<% @boroughs.each do |borough| %>
+  <ul>
+    <li><p><%= borough.name %> - £<%= borough.gross_income %></p></li>
+  </ul>
+<% end %>

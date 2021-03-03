@@ -12,9 +12,20 @@ Category.destroy_all
 Company.destroy_all
 # Boraughs ex
 puts "Creating Boroughs..."
-westmister = { name: "Westminster", area: 11197, median_income: 60000, population: 11000 }
-hackney = { name: "Camden", area: 11197, median_income: 60000, population: 11000}
-camden = { name: "Hackney", area: 73591071, median_income: 29400, population: 112000 }
+# westmister = { name: "Westminster", area: 11197, median_income: 60000, population: 11000 }
+# hackney = { name: "Camden", area: 11197, median_income: 60000, population: 11000}
+# camden = { name: "Hackney", area: 73591071, median_income: 29400, population: 112000 }
+require 'csv'
+boroughs  = []
+csv_options = { headers: :first_row, header_converters: :symbol }
+CSV.foreach("#{Rails.root}/lib/seeds/borough_data.csv", csv_options) do |row|
+  row[:name] = row[:name]
+  row[:employment_rate] = row[:employment_rate].to_f
+  row[:gross_income] = row[:gross_income].to_i
+  boroughs << Borough.create(row.to_h)
+end
+
+p boroughs
 
 # Companies
 puts "Creating companies..."
@@ -35,11 +46,11 @@ puts "Creating categories..."
 categories = [{ name: "resturant", }, { name: "sports and recreation" }, { name: "cafe" }]
 
 # iterator to display whats created
-puts "BOROUGHS"
-[ westmister, hackney, camden ].each do |attributes|
-  borough = Borough.create!(attributes)
-  puts "Created #{borough.name}"
-end
+# puts "BOROUGHS"
+# [ westmister, hackney, camden ].each do |attributes|
+#   borough = Borough.create!(attributes)
+#   puts "Created #{borough.name}"
+# end
 
 puts "CATEGORIES"
 categories.each do |attributes|
