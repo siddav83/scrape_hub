@@ -1,4 +1,5 @@
-﻿name, employment_rate, gross_income
+﻿name,employment_rate,gross_income
+,,
 City of London,64.6,.
 Barking and Dagenham,65.8,27886
 Barnet,68.5,33443
@@ -32,3 +33,9 @@ Tower Hamlets,70.4,36429
 Waltham Forest,73.1,30859
 Wandsworth,78.8,41064
 Westminster,65.6,42141
+Inner London,72.3,.
+Outer London,73.3,.
+London,72.9,33776
+England,73.9,28503
+United Kingdom,73.5,28213
+National comparator,73.9,28503

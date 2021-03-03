@@ -6,6 +6,8 @@ class BoroughsController < ApplicationController
     @boroughs = Borough.all
     @boroughs = @boroughs.income_max(40000)
     @boroughs = @boroughs.income_min(30000)
+    @boroughs = @boroughs.employment_rate_min(76.00)
+    @boroughs = @boroughs.employment_rate_max(80.00)
   end
 
   def show
