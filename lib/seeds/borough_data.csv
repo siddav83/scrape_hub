@@ -1,41 +1,33 @@
-﻿name,employment_rate,gross_income
-,,
-City of London,64.6,.
-Barking and Dagenham,65.8,27886
-Barnet,68.5,33443
-Bexley,75.1,34350
-Brent,69.5,29812
-Bromley,75.3,37682
-Camden,69.2,39796
-Croydon,75.4,32696
-Ealing,72.7,31331
-Enfield,73,31603
-Greenwich,72.1,32415
-Hackney,69,32056
-Hammersmith and Fulham,77.5,38041
-Haringey,71.3,31063
-Harrow,73.9,33202
-Havering,76.5,33398
-Hillingdon,73.2,33508
-Hounslow,74.2,31001
-Islington,72.6,36592
-Kensington and Chelsea,68.2,.
-Kingston upon Thames,74.4,37979
-Lambeth,78.5,33441
-Lewisham,75.9,33157
-Merton,78.8,33989
-Newham,66.2,27942
-Redbridge,68.3,33483
-Richmond upon Thames,79.6,42076
-Southwark,74.2,33864
-Sutton,78.2,32697
-Tower Hamlets,70.4,36429
-Waltham Forest,73.1,30859
-Wandsworth,78.8,41064
-Westminster,65.6,42141
-Inner London,72.3,.
-Outer London,73.3,.
-London,72.9,33776
-England,73.9,28503
-United Kingdom,73.5,28213
-National comparator,73.9,28503
+﻿name, population, area,employment_rate, gross_income
+City of London,8800,290,64.6,60000
+Barking and Dagenham,209000,3611,65.8,27886
+Barnet,389600,8675,68.5,33443
+Bexley,244300,6058,75.1,34350
+Brent,332100,4323,69.5,29812
+Bromley,327900,15013,75.3,37682
+Camden,242500,2179,69.2,39796
+Croydon,386500,8650,75.4,32696
+Ealing,351600,5554,72.7,31331
+Enfield,333000,8083,73,31603
+Greenwich,280100,4733,72.1,32415
+Hackney,274300,1905,69,32056
+Hammersmith and Fulham,185300,1640,77.5,38041
+Haringey,278000,2960,71.3,31063
+Harrow,252300,5046,73.9,33202
+Havering,254300,11235,76.5,33398
+Hillingdon,301000,11570,73.2,33508
+Hounslow,274200,5598,74.2,31001
+Islington,231200,1486,72.6,36592
+Kensington and Chelsea,159000,1212,68.2,40400
+Kingston upon Thames,175400,3726,74.4,37979
+Lambeth,328900,2681,78.5,33441
+Lewisham,303400,3515,75.9,33157
+Merton,208100,3762,78.8,33989
+Newham,342900,3620,66.2,27942
+Redbridge,304200,5642,68.3,33483
+Richmond upon Thames,197300,5741,79.6,42076
+Southwark,314300,2886,74.2,33864
+Sutton,202600,4385,78.2,32697
+Tower Hamlets,304000,1978,70.4,36429
+Waltham Forest,276200,3881,73.1,30859
+Wandsworth,321000,3426,78.8,41064
