@@ -1,14 +1,70 @@
-$dark-purple: #020825;
-$light-purple: #7E2382;
+$banner-turquoise: #41CCB1;
+$banner-blue: #25CAC8;
+$text-blue: #2A456D;
+$background-blue: #F6F9FC;
+$analyse-text-light-blue: #3A619B;
+$analyse-text-dark-blue: #2B4770;
+
+body {
+  background-color: white;
+}
+
 
 .home-main-banner {
-  height: 70vh;
+  height: 740px;
   width: 100%;
-  background-image: linear-gradient(to top right, $dark-purple, $light-purple);
-  border-radius: 0 0 30% 30%;
-  // background-position-y: -1000px;
+  background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
 }
 
 .home-banner-content {
   color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 0;
+}
+
+.learn-more-prompt {
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.learn-more-text {
+  color: $text-blue;
+  justify-content: center;
+  text-align: center;
+  height: 185px;
+  width: 673px;
+  margin: auto;
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+.banner-form {
+  text-align: right;
+}
+
+.analysis-input-dropdown {
+  height: 60px;
+  width: 687px;
+  border-radius: 30px;
+  text-align: right;
+  border: none;
+  margin: 25px 0;
+  background-color: white;
+  color: $text-blue;
+}
+
+.blue-analyse-button {
+  height: 68px;
+  width: 289px;
+  border-radius: 34px;
+  border: #274c8b solid 1px;
+  background-image: linear-gradient(to bottom right, $analyse-text-light-blue, $analyse-text-dark-blue);
+  justify-content: center;
+  text-align: center;
 }
