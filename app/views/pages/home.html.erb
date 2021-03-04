@@ -19,6 +19,9 @@
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
+                  <%# <% @categories.each do |category| %>
+                    <%# <option value="3">Three</option> %>
+                  <%# <% end %> %>
               </select>
 
               <button class="analysis-input-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,21 +34,16 @@
               </ul>
             </div>
 
+            <div class="minmax">
+              <label for="customRange3" class="form-label">Min range</label>
+              <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
+              <label for="customRange3" class="form-label">Max range</label>
+              <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
+            </div>
+
             <div class="" type="button">
               <button class="blue-analyse-button">ANALYSE</button>
             </div>
-          </div>
-
-          <div class="minmax">
-            <label for="customRange3" class="form-label">Min range</label>
-            <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
-            <label for="customRange3" class="form-label">Max range</label>
-            <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
-          </div>
-
-
-          <div class="blue-analyse-button" type="button">
-            <button>ANALYSE</button>
           </div>
         </div>
       </div>
@@ -142,6 +140,11 @@
         <div class="col-4">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
         </div>
+        
+        <%= simple_form_for @borough do |f| %>
+          <%= f.input : %>
+        <% end %>
+        
         
       </div>
     </div>

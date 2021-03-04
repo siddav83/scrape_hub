@@ -1,0 +1,289 @@
+﻿Name ,address,turnover ,borough_id,category
+Pret a Manger,Pret a manger Road,1000000,1,1
+Pret a Manger,Pret a manger Road,700000,2,1
+Pret a Manger,Pret a manger Road,1000000,3,1
+Pret a Manger,Pret a manger Road,700000,4,1
+Pret a Manger,Pret a manger Road,700000,5,1
+Pret a Manger,Pret a manger Road,1000000,6,1
+Pret a Manger,Pret a manger Road,700000,7,1
+Pret a Manger,Pret a manger Road,700000,8,1
+Pret a Manger,Pret a manger Road,1500000,9,1
+Pret a Manger,Pret a manger Road,1000000,10,1
+Pret a Manger,Pret a manger Road,1500000,11,1
+Pret a Manger,Pret a manger Road,700000,12,1
+Pret a Manger,Pret a manger Road,1500000,13,1
+Pret a Manger,Pret a manger Road,1500000,14,1
+Pret a Manger,Pret a manger Road,1000000,15,1
+Pret a Manger,Pret a manger Road,1800000,16,1
+Pret a Manger,Pret a manger Road,700000,17,1
+Pret a Manger,Pret a manger Road,1800000,18,1
+Pret a Manger,Pret a manger Road,1800000,19,1
+Pret a Manger,Pret a manger Road,1000000,20,1
+Pret a Manger,Pret a manger Road,1800000,21,1
+Pret a Manger,Pret a manger Road,700000,22,1
+Pret a Manger,Pret a manger Road,1800000,23,1
+Pret a Manger,Pret a manger Road,1000000,24,1
+Pret a Manger,Pret a manger Road,1800000,25,1
+Pret a Manger,Pret a manger Road,1500000,26,1
+Pret a Manger,Pret a manger Road,700000,27,1
+Pret a Manger,Pret a manger Road,1800000,28,1
+Pret a Manger,Pret a manger Road,1000000,29,1
+Pret a Manger,Pret a manger Road,1800000,30,1
+Pret a Manger,Pret a manger Road,1500000,31,1
+Pret a Manger,Pret a manger Road,1000000,32,1
+Five Guys,Five guys Road,1000000,1,1
+Five Guys,Five guys Road,700000,2,1
+Five Guys,Five guys Road,1000000,3,1
+Five Guys,Five guys Road,700000,4,1
+Five Guys,Five guys Road,700000,5,1
+Five Guys,Five guys Road,1000000,6,1
+Five Guys,Five guys Road,700000,7,1
+Five Guys,Five guys Road,700000,8,1
+Five Guys,Five guys Road,1500000,9,1
+Five Guys,Five guys Road,1000000,10,1
+Five Guys,Five guys Road,1500000,11,1
+Five Guys,Five guys Road,700000,12,1
+Five Guys,Five guys Road,1500000,13,1
+Five Guys,Five guys Road,1500000,14,1
+Five Guys,Five guys Road,1000000,15,1
+Five Guys,Five guys Road,1800000,16,1
+Five Guys,Five guys Road,700000,17,1
+Five Guys,Five guys Road,1800000,18,1
+Five Guys,Five guys Road,1800000,19,1
+Five Guys,Five guys Road,1000000,20,1
+Five Guys,Five guys Road,1800000,21,1
+Five Guys,Five guys Road,700000,22,1
+Five Guys,Five guys Road,1800000,23,1
+Five Guys,Five guys Road,1000000,24,1
+Five Guys,Five guys Road,1800000,25,1
+Five Guys,Five guys Road,1500000,26,1
+Five Guys,Five guys Road,700000,27,1
+Five Guys,Five guys Road,1800000,28,1
+Five Guys,Five guys Road,1000000,29,1
+Five Guys,Five guys Road,1800000,30,1
+Five Guys,Five guys Road,1500000,31,1
+Five Guys,Five guys Road,1000000,32,1
+McDonald,McDonald Road,1000000,1,1
+McDonald,McDonald Road,700000,2,1
+McDonald,McDonald Road,1000000,3,1
+McDonald,McDonald Road,700000,4,1
+McDonald,McDonald Road,700000,5,1
+McDonald,McDonald Road,1000000,6,1
+McDonald,McDonald Road,700000,7,1
+McDonald,McDonald Road,700000,8,1
+McDonald,McDonald Road,1500000,9,1
+McDonald,McDonald Road,1000000,10,1
+McDonald,McDonald Road,1500000,11,1
+McDonald,McDonald Road,700000,12,1
+McDonald,McDonald Road,1500000,13,1
+McDonald,McDonald Road,1500000,14,1
+McDonald,McDonald Road,1000000,15,1
+McDonald,McDonald Road,1800000,16,1
+McDonald,McDonald Road,700000,17,1
+McDonald,McDonald Road,1800000,18,1
+McDonald,McDonald Road,1800000,19,1
+McDonald,McDonald Road,1000000,20,1
+McDonald,McDonald Road,1800000,21,1
+McDonald,McDonald Road,700000,22,1
+McDonald,McDonald Road,1800000,23,1
+McDonald,McDonald Road,1000000,24,1
+McDonald,McDonald Road,1800000,25,1
+McDonald,McDonald Road,1500000,26,1
+McDonald,McDonald Road,700000,27,1
+McDonald,McDonald Road,1800000,28,1
+McDonald,McDonald Road,1000000,29,1
+McDonald,McDonald Road,1800000,30,1
+McDonald,McDonald Road,1500000,31,1
+McDonald,McDonald Road,1000000,32,1
+Virgin Active,Virgin Active Road,1000000,1,2
+Virgin Active,Virgin Active Road,700000,2,2
+Virgin Active,Virgin Active Road,1000000,3,2
+Virgin Active,Virgin Active Road,700000,4,2
+Virgin Active,Virgin Active Road,700000,5,2
+Virgin Active,Virgin Active Road,1000000,6,2
+Virgin Active,Virgin Active Road,700000,7,2
+Virgin Active,Virgin Active Road,700000,8,2
+Virgin Active,Virgin Active Road,1500000,9,2
+Virgin Active,Virgin Active Road,1000000,10,2
+Virgin Active,Virgin Active Road,1500000,11,2
+Virgin Active,Virgin Active Road,700000,12,2
+Virgin Active,Virgin Active Road,1500000,13,2
+Virgin Active,Virgin Active Road,1500000,14,2
+Virgin Active,Virgin Active Road,1000000,15,2
+Virgin Active,Virgin Active Road,1800000,16,2
+Virgin Active,Virgin Active Road,700000,17,2
+Virgin Active,Virgin Active Road,1800000,18,2
+Virgin Active,Virgin Active Road,1800000,19,2
+Virgin Active,Virgin Active Road,1000000,20,2
+Virgin Active,Virgin Active Road,1800000,21,2
+Virgin Active,Virgin Active Road,700000,22,2
+Virgin Active,Virgin Active Road,1800000,23,2
+Virgin Active,Virgin Active Road,1000000,24,2
+Virgin Active,Virgin Active Road,1800000,25,2
+Virgin Active,Virgin Active Road,1500000,26,2
+Virgin Active,Virgin Active Road,700000,27,2
+Virgin Active,Virgin Active Road,1800000,28,2
+Virgin Active,Virgin Active Road,1000000,29,2
+Virgin Active,Virgin Active Road,1800000,30,2
+Virgin Active,Virgin Active Road,1500000,31,2
+Virgin Active,Virgin Active Road,1000000,32,2
+PureGym,PureGym Road,1800000,1,2
+PureGym,PureGym Road,1500000,2,2
+PureGym,PureGym Road,700000,3,2
+PureGym,PureGym Road,1800000,4,2
+PureGym,PureGym Road,1000000,5,2
+PureGym,PureGym Road,1800000,6,2
+PureGym,PureGym Road,1500000,7,2
+PureGym,PureGym Road,1000000,8,2
+PureGym,PureGym Road,1000000,9,2
+PureGym,PureGym Road,700000,10,2
+PureGym,PureGym Road,1000000,11,2
+PureGym,PureGym Road,700000,12,2
+PureGym,PureGym Road,700000,13,2
+PureGym,PureGym Road,1000000,14,2
+PureGym,PureGym Road,700000,15,2
+PureGym,PureGym Road,700000,16,2
+PureGym,PureGym Road,1500000,17,2
+PureGym,PureGym Road,1000000,18,2
+PureGym,PureGym Road,1500000,19,2
+PureGym,PureGym Road,700000,20,2
+PureGym,PureGym Road,1500000,21,2
+PureGym,PureGym Road,1500000,22,2
+PureGym,PureGym Road,1000000,23,2
+PureGym,PureGym Road,1800000,24,2
+PureGym,PureGym Road,700000,25,2
+PureGym,PureGym Road,1800000,26,2
+PureGym,PureGym Road,1800000,27,2
+PureGym,PureGym Road,1000000,28,2
+PureGym,PureGym Road,1800000,29,2
+PureGym,PureGym Road,1500000,30,2
+PureGym,PureGym Road,1000000,31,2
+PureGym,PureGym Road,1000000,32,2
+Anytime Fitness,Anytime Fitness Road ,700000,1,2
+Anytime Fitness,Anytime Fitness Road ,1000000,2,2
+Anytime Fitness,Anytime Fitness Road ,700000,3,2
+Anytime Fitness,Anytime Fitness Road ,700000,4,2
+Anytime Fitness,Anytime Fitness Road ,700000,5,2
+Anytime Fitness,Anytime Fitness Road ,1500000,6,2
+Anytime Fitness,Anytime Fitness Road ,1500000,7,2
+Anytime Fitness,Anytime Fitness Road ,1000000,8,2
+Anytime Fitness,Anytime Fitness Road ,1800000,9,2
+Anytime Fitness,Anytime Fitness Road ,700000,10,2
+Anytime Fitness,Anytime Fitness Road ,1800000,11,2
+Anytime Fitness,Anytime Fitness Road ,1800000,12,2
+Anytime Fitness,Anytime Fitness Road ,1000000,13,2
+Anytime Fitness,Anytime Fitness Road ,1800000,14,2
+Anytime Fitness,Anytime Fitness Road ,700000,15,2
+Anytime Fitness,Anytime Fitness Road ,1500000,16,2
+Anytime Fitness,Anytime Fitness Road ,1500000,17,2
+Anytime Fitness,Anytime Fitness Road ,1000000,18,2
+Anytime Fitness,Anytime Fitness Road ,1800000,19,2
+Anytime Fitness,Anytime Fitness Road ,700000,20,2
+Anytime Fitness,Anytime Fitness Road ,1800000,21,2
+Anytime Fitness,Anytime Fitness Road ,1800000,22,2
+Anytime Fitness,Anytime Fitness Road ,1000000,23,2
+Anytime Fitness,Anytime Fitness Road ,1800000,24,2
+Anytime Fitness,Anytime Fitness Road ,700000,25,2
+Anytime Fitness,Anytime Fitness Road ,1500000,26,2
+Anytime Fitness,Anytime Fitness Road ,1500000,27,2
+Anytime Fitness,Anytime Fitness Road ,1000000,28,2
+Anytime Fitness,Anytime Fitness Road ,1800000,29,2
+Anytime Fitness,Anytime Fitness Road ,700000,30,2
+Anytime Fitness,Anytime Fitness Road ,1800000,31,2
+Anytime Fitness,Anytime Fitness Road ,1800000,32,2
+Caffè Nero,Caffè Nero Road ,1000000,1,3
+Caffè Nero,Caffè Nero Road ,1800000,2,3
+Caffè Nero,Caffè Nero Road ,1500000,3,3
+Caffè Nero,Caffè Nero Road ,1000000,4,3
+Caffè Nero,Caffè Nero Road ,1800000,5,3
+Caffè Nero,Caffè Nero Road ,700000,6,3
+Caffè Nero,Caffè Nero Road ,1800000,7,3
+Caffè Nero,Caffè Nero Road ,1800000,8,3
+Caffè Nero,Caffè Nero Road ,1000000,9,3
+Caffè Nero,Caffè Nero Road ,1800000,10,3
+Caffè Nero,Caffè Nero Road ,700000,11,3
+Caffè Nero,Caffè Nero Road ,1500000,12,3
+Caffè Nero,Caffè Nero Road ,1500000,13,3
+Caffè Nero,Caffè Nero Road ,1500000,14,3
+Caffè Nero,Caffè Nero Road ,1000000,15,3
+Caffè Nero,Caffè Nero Road ,1800000,16,3
+Caffè Nero,Caffè Nero Road ,700000,17,3
+Caffè Nero,Caffè Nero Road ,1800000,18,3
+Caffè Nero,Caffè Nero Road ,1800000,19,3
+Caffè Nero,Caffè Nero Road ,1000000,20,3
+Caffè Nero,Caffè Nero Road ,1800000,21,3
+Caffè Nero,Caffè Nero Road ,700000,22,3
+Caffè Nero,Caffè Nero Road ,1500000,23,3
+Caffè Nero,Caffè Nero Road ,1500000,24,3
+Caffè Nero,Caffè Nero Road ,1500000,25,3
+Caffè Nero,Caffè Nero Road ,1000000,26,3
+Caffè Nero,Caffè Nero Road ,1800000,27,3
+Caffè Nero,Caffè Nero Road ,700000,28,3
+Caffè Nero,Caffè Nero Road ,1800000,29,3
+Caffè Nero,Caffè Nero Road ,1800000,30,3
+Caffè Nero,Caffè Nero Road ,1000000,31,3
+Caffè Nero,Caffè Nero Road ,1800000,32,3
+Starbucks,Starbucks Road ,700000,1,3
+Starbucks,Starbucks Road ,1500000,2,3
+Starbucks,Starbucks Road ,1500000,3,3
+Starbucks,Starbucks Road ,700000,4,3
+Starbucks,Starbucks Road ,1800000,5,3
+Starbucks,Starbucks Road ,1800000,6,3
+Starbucks,Starbucks Road ,1000000,7,3
+Starbucks,Starbucks Road ,1800000,8,3
+Starbucks,Starbucks Road ,1500000,9,3
+Starbucks,Starbucks Road ,1000000,10,3
+Starbucks,Starbucks Road ,1800000,11,3
+Starbucks,Starbucks Road ,700000,12,3
+Starbucks,Starbucks Road ,1800000,13,3
+Starbucks,Starbucks Road ,1800000,14,3
+Starbucks,Starbucks Road ,1000000,15,3
+Starbucks,Starbucks Road ,700000,16,3
+Starbucks,Starbucks Road ,1800000,17,3
+Starbucks,Starbucks Road ,1800000,18,3
+Starbucks,Starbucks Road ,1000000,19,3
+Starbucks,Starbucks Road ,1800000,20,3
+Starbucks,Starbucks Road ,1500000,21,3
+Starbucks,Starbucks Road ,1000000,22,3
+Starbucks,Starbucks Road ,1800000,23,3
+Starbucks,Starbucks Road ,700000,24,3
+Starbucks,Starbucks Road ,1800000,25,3
+Starbucks,Starbucks Road ,1800000,26,3
+Starbucks,Starbucks Road ,1000000,27,3
+Starbucks,Starbucks Road ,700000,28,3
+Starbucks,Starbucks Road ,1800000,29,3
+Starbucks,Starbucks Road ,1800000,30,3
+Starbucks,Starbucks Road ,1000000,31,3
+Starbucks,Starbucks Road ,1800000,32,3
+Costa Coffee,Costa Coffee Road ,1500000,1,3
+Costa Coffee,Costa Coffee Road ,1000000,2,3
+Costa Coffee,Costa Coffee Road ,1800000,3,3
+Costa Coffee,Costa Coffee Road ,700000,4,3
+Costa Coffee,Costa Coffee Road ,1800000,5,3
+Costa Coffee,Costa Coffee Road ,1800000,6,3
+Costa Coffee,Costa Coffee Road ,1000000,7,3
+Costa Coffee,Costa Coffee Road ,700000,8,3
+Costa Coffee,Costa Coffee Road ,1800000,9,3
+Costa Coffee,Costa Coffee Road ,1800000,10,3
+Costa Coffee,Costa Coffee Road ,1000000,11,3
+Costa Coffee,Costa Coffee Road ,1800000,12,3
+Costa Coffee,Costa Coffee Road ,1500000,13,3
+Costa Coffee,Costa Coffee Road ,1000000,14,3
+Costa Coffee,Costa Coffee Road ,1800000,15,3
+Costa Coffee,Costa Coffee Road ,700000,16,3
+Costa Coffee,Costa Coffee Road ,1800000,17,3
+Costa Coffee,Costa Coffee Road ,1800000,18,3
+Costa Coffee,Costa Coffee Road ,1000000,19,3
+Costa Coffee,Costa Coffee Road ,700000,20,3
+Costa Coffee,Costa Coffee Road ,1800000,21,3
+Costa Coffee,Costa Coffee Road ,1800000,22,3
+Costa Coffee,Costa Coffee Road ,1000000,23,3
+Costa Coffee,Costa Coffee Road ,1800000,24,3
+Costa Coffee,Costa Coffee Road ,1500000,25,3
+Costa Coffee,Costa Coffee Road ,1000000,26,3
+Costa Coffee,Costa Coffee Road ,1800000,27,3
+Costa Coffee,Costa Coffee Road ,700000,28,3
+Costa Coffee,Costa Coffee Road ,1800000,29,3
+Costa Coffee,Costa Coffee Road ,1800000,30,3
+Costa Coffee,Costa Coffee Road ,700000,31,3
+Costa Coffee,Costa Coffee Road ,1800000,32,3
