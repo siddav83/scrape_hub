@@ -1,0 +1,41 @@
+[33mcommit 61a1a3a4bbe57d4735364183fa2552be0da221ca[m[33m ([m[1;36mHEAD -> [m[1;32mstart-build-front-page[m[33m)[m
+Author: alec wayman <aejw_edu@pm.me>
+Date:   Tue Mar 2 15:50:18 2021 +0000
+
+    frontend paused for a bit while algorithms are created
+
+[33mcommit a023a0babd68f2ef26acd287b7bbd87cd21d3ea5[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 70e8d23 7bc0245
+Author: Daniel Tefe <72738878+awaritefe@users.noreply.github.com>
+Date:   Tue Mar 2 11:52:18 2021 +0000
+
+    Merge pull request #3 from siddav83/updated-associations
+    
+    fixed associations
+
+[33mcommit 7bc0245a4e91c8a5fbd6c8034082e3027ef49015[m[33m ([m[1;31morigin/updated-associations[m[33m)[m
+Author: alec wayman <aejw_edu@pm.me>
+Date:   Tue Mar 2 11:32:39 2021 +0000
+
+    fixed associations
+
+[33mcommit 70e8d23ec9574eb2be01767408b848422ba8c0cf[m
+Merge: d69f8a1 559c556
+Author: Daniel Tefe <72738878+awaritefe@users.noreply.github.com>
+Date:   Tue Mar 2 10:58:43 2021 +0000
+
+    Merge pull request #2 from siddav83/BoroughModel
+    
+    all models added with relationships
+
+[33mcommit 559c556cb02d938c453909390fdf6589086d0118[m
+Author: DanielAwaritefe <awaritefe@gmail.com>
+Date:   Mon Mar 1 17:59:47 2021 +0000
+
+    all models added with relationships
+
+[33mcommit d69f8a10583e08a44b49dafa2ccc94d9a6317794[m
+Author: David Siddle <siddav83@gmail.com>
+Date:   Mon Mar 1 15:32:28 2021 +0000
+
+    Initial commit with minimal template from https://github.com/lewagon/rails-templates
