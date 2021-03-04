@@ -140,10 +140,19 @@
         <div class="col-4">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
         </div>
+
         
-        <%= simple_form_for @borough do |f| %>
-          <%= f.input : %>
+        
+        <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
+          <%= f.input :income_max %>
+          <%= f.input :income_min %>
+          <%= f.input :employment_rate_min %>
+          <%= f.input :employment_rate_max %>
+
+          <%= f.submit %>
         <% end %>
+
+
         
         
       </div>
