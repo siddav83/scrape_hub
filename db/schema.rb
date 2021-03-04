@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_04_145157) do
+ActiveRecord::Schema.define(version: 2021_03_04_214454) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 2021_03_04_145157) do
     t.datetime "updated_at", precision: 6, null: false
     t.float "employment_rate"
     t.integer "gross_income"
+    t.integer "average_age"
+    t.integer "two_year_business_survival_rates"
+    t.integer "happiness_score_out_of_10"
   end
 
   create_table "categories", force: :cascade do |t|
