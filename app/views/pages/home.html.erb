@@ -19,9 +19,6 @@
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
-                  <%# <% @categories.each do |category| %>
-                    <%# <option value="3">Three</option> %>
-                  <%# <% end %> %>
               </select>
 
               <button class="analysis-input-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,6 +41,15 @@
             <div class="" type="button">
               <button class="blue-analyse-button">ANALYSE</button>
             </div>
+
+            <!-- <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
+              <%= f.input :income_max, collection: 40_000.step(20_000, 5000), class: "analysis-input-dropdown" %>
+              <%= f.input :income_min, input_html: { min: 20_000, max: 60_000, step: 5000 } %>
+              <%= f.input :employment_rate_min, collection: ["input 1", "input 2", "input 3"] %>
+              <%= f.input :employment_rate_max, collection: ["input 1", "input 2", "input 3"] %>
+              <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
+            <% end %> -->
+            
           </div>
         </div>
       </div>
@@ -143,14 +149,14 @@
 
         
         
-        <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
-          <%= f.input :income_max %>
-          <%= f.input :income_min %>
-          <%= f.input :employment_rate_min %>
-          <%= f.input :employment_rate_max %>
+        <%# <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
+          <%# <%= f.input :income_max %>
+          <%# <%= f.input :income_min %> %>
+          <%# <%= f.input :employment_rate_min %> %>
+          <%# <%= f.input :employment_rate_max %> %>
 
-          <%= f.submit %>
-        <% end %>
+          <%# <%= f.submit %> %> %>
+        <%# <% end %> %> %>
 
 
         
