@@ -80,3 +80,40 @@ body {
   height: 1020px;
   width: 100%;
 }
+.show-page {
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.show-borough-detail {
+      align-items: center;
+}
+
+.show-map {
+  border: 2px white solid;
+  border-radius: 50px;
+  height: 471px;
+  width: 380px;
+}
+
+ .borough-details h3, h4 {
+   text-align: center;
+}
+.borough-details h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px
+
+}
+.borough-details h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.borough-details p {
+  font-size: 14px;
+}

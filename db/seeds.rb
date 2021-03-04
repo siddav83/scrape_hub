@@ -29,43 +29,43 @@ end
 
 p boroughs
 
-rails raise
-# Companies
-puts "Creating companies..."
-roka = { name: "Roka", address: "Holborn", borough_id: 2 }
-dishoom = { name: "Dishoom", address: "Kings Cross", borough_id: 2 }
-boxpark = { name: "Boxpark", address: "Shoreditch", borough_id: 3 }
+# rails raise
+# # Companies
+# puts "Creating companies..."
+# roka = { name: "Roka", address: "Holborn", borough_id: 2 }
+# dishoom = { name: "Dishoom", address: "Kings Cross", borough_id: 2 }
+# boxpark = { name: "Boxpark", address: "Shoreditch", borough_id: 3 }
 
-virgin_active = { name: "Virgin Active", address: "Hackney", borough_id: 2 }
-yogi = { name: "Yogi", address: "Kentish Town", borough_id: 3 }
-oasis = { name: "Oasis sports Center", address: "Holborn", borough_id: 2  }
+# virgin_active = { name: "Virgin Active", address: "Hackney", borough_id: 2 }
+# yogi = { name: "Yogi", address: "Kentish Town", borough_id: 3 }
+# oasis = { name: "Oasis sports Center", address: "Holborn", borough_id: 2  }
 
-starbucks = { name: "Starbucks", address: "Euston", borough_id: 3 }
-saints = { name: "Saints", address: "Camden", borough_id: 3 }
-benugo = { name: "Benugo", address: "Hoxton", borough_id: 2 }
+# starbucks = { name: "Starbucks", address: "Euston", borough_id: 3 }
+# saints = { name: "Saints", address: "Camden", borough_id: 3 }
+# benugo = { name: "Benugo", address: "Hoxton", borough_id: 2 }
 
-# Category
-puts "Creating categories..."
-categories = [{ name: "resturant", }, { name: "sports and recreation" }, { name: "cafe" }]
+# # Category
+# puts "Creating categories..."
+# categories = [{ name: "resturant", }, { name: "sports and recreation" }, { name: "cafe" }]
 
-# iterator to display whats created
-# puts "BOROUGHS"
-# [ westmister, hackney, camden ].each do |attributes|
-#   borough = Borough.create!(attributes)
-#   puts "Created #{borough.name}"
+# # iterator to display whats created
+# # puts "BOROUGHS"
+# # [ westmister, hackney, camden ].each do |attributes|
+# #   borough = Borough.create!(attributes)
+# #   puts "Created #{borough.name}"
+# # end
+
+# puts "CATEGORIES"
+# categories.each do |attributes|
+#   category = Category.create!(attributes)
+#   puts "Created #{category.name}"
 # end
 
-puts "CATEGORIES"
-categories.each do |attributes|
-  category = Category.create!(attributes)
-  puts "Created #{category.name}"
-end
-
-puts "COMPANIES"
-[ roka, dishoom, boxpark, virgin_active, yogi, oasis, starbucks, saints, benugo ].each do |attributes|
-  company = Company.create!(attributes)
-  puts "Created #{company.name}"
-end
+# puts "COMPANIES"
+# [ roka, dishoom, boxpark, virgin_active, yogi, oasis, starbucks, saints, benugo ].each do |attributes|
+#   company = Company.create!(attributes)
+#   puts "Created #{company.name}"
+# end
 
 puts "Finished!"
 
