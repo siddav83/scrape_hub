@@ -43,7 +43,7 @@ CSV.foreach("#{Rails.root}/lib/seeds/company.csv", csv_options) do |row|
   row[:address] = row[:address]
   row[:turnover] = row[:turnover].to_i
   row[:borough_id] = row[:borough_id].to_f
-  row[:category] = row[:category].to_i
+  row[:category] = row[:category]
   companies << Company.create(row.to_h)
 end
 
