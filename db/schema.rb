@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_04_143408) do
+ActiveRecord::Schema.define(version: 2021_03_04_145157) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,19 +38,9 @@ ActiveRecord::Schema.define(version: 2021_03_04_143408) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "turnover"
+    t.integer "category"
     t.index ["borough_id"], name: "index_companies_on_borough_id"
   end
 
-  create_table "company_categories", force: :cascade do |t|
-    t.bigint "company_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.bigint "category_id", null: false
-    t.index ["category_id"], name: "index_company_categories_on_category_id"
-    t.index ["company_id"], name: "index_company_categories_on_company_id"
-  end
-
   add_foreign_key "companies", "boroughs"
-  add_foreign_key "company_categories", "categories"
-  add_foreign_key "company_categories", "companies"
 end
