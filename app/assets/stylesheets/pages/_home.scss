@@ -91,6 +91,8 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 10;
   }
+  // Added margin between sliders and button
+  margin-top: 10px;
 }
 
 .what-we-do-slide {
@@ -182,4 +184,15 @@ thead th:nth-child(1) {
   :link {
     text-decoration: none;
   }
+// Daniels addition with slider. CHECK HOME PAGE!
+.minmax {
+  display: flex;
+  justify-content: space-between;
+}
+.form-range {
+  width: 400px;
+  padding:10px;
+}
+.form-label {
+  padding-left: 20px;
 }
