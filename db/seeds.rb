@@ -29,20 +29,36 @@ end
 
 p boroughs
 
-rails raise
+
 # Companies
 puts "Creating companies..."
-roka = { name: "Roka", address: "Holborn", borough_id: 2 }
-dishoom = { name: "Dishoom", address: "Kings Cross", borough_id: 2 }
-boxpark = { name: "Boxpark", address: "Shoreditch", borough_id: 3 }
+require 'csv'
+companies  = []
+csv_options = { headers: :first_row, header_converters: :symbol }
+CSV.foreach("#{Rails.root}/lib/seeds/company.csv", csv_options) do |row|
+  row[:name] = row[:name]
+  row[:address] = row[:address]
+  row[:turnover] = row[:turnover].to_i
+  row[:borough_id] = row[:borough_id].to_f
+  row[:category] = row[:category].to_i
+  companies << Company.create(row.to_h)
+end
 
-virgin_active = { name: "Virgin Active", address: "Hackney", borough_id: 2 }
-yogi = { name: "Yogi", address: "Kentish Town", borough_id: 3 }
-oasis = { name: "Oasis sports Center", address: "Holborn", borough_id: 2  }
+p companies
 
-starbucks = { name: "Starbucks", address: "Euston", borough_id: 3 }
-saints = { name: "Saints", address: "Camden", borough_id: 3 }
-benugo = { name: "Benugo", address: "Hoxton", borough_id: 2 }
+
+
+# roka = { name: "Roka", address: "Holborn", borough_id: 2 }
+# dishoom = { name: "Dishoom", address: "Kings Cross", borough_id: 2 }
+# boxpark = { name: "Boxpark", address: "Shoreditch", borough_id: 3 }
+
+# virgin_active = { name: "Virgin Active", address: "Hackney", borough_id: 2 }
+# yogi = { name: "Yogi", address: "Kentish Town", borough_id: 3 }
+# oasis = { name: "Oasis sports Center", address: "Holborn", borough_id: 2  }
+
+# starbucks = { name: "Starbucks", address: "Euston", borough_id: 3 }
+# saints = { name: "Saints", address: "Camden", borough_id: 3 }
+# benugo = { name: "Benugo", address: "Hoxton", borough_id: 2 }
 
 # Category
 puts "Creating categories..."
@@ -55,17 +71,17 @@ categories = [{ name: "resturant", }, { name: "sports and recreation" }, { name:
 #   puts "Created #{borough.name}"
 # end
 
-puts "CATEGORIES"
-categories.each do |attributes|
-  category = Category.create!(attributes)
-  puts "Created #{category.name}"
-end
+# puts "CATEGORIES"
+# categories.each do |attributes|
+#   category = Category.create!(attributes)
+#   puts "Created #{category.name}"
+# end
 
-puts "COMPANIES"
-[ roka, dishoom, boxpark, virgin_active, yogi, oasis, starbucks, saints, benugo ].each do |attributes|
-  company = Company.create!(attributes)
-  puts "Created #{company.name}"
-end
+# puts "COMPANIES"
+# [ roka, dishoom, boxpark, virgin_active, yogi, oasis, starbucks, saints, benugo ].each do |attributes|
+#   company = Company.create!(attributes)
+#   puts "Created #{company.name}"
+# end
 
 puts "Finished!"
 
