@@ -29,9 +29,25 @@ end
 
 p boroughs
 
-# rails raise
-# # Companies
-# puts "Creating companies..."
+
+# Companies
+puts "Creating companies..."
+require 'csv'
+companies  = []
+csv_options = { headers: :first_row, header_converters: :symbol }
+CSV.foreach("#{Rails.root}/lib/seeds/company.csv", csv_options) do |row|
+  row[:name] = row[:name]
+  row[:address] = row[:address]
+  row[:turnover] = row[:turnover].to_i
+  row[:borough_id] = row[:borough_id].to_f
+  row[:category] = row[:category].to_i
+  companies << Company.create(row.to_h)
+end
+
+p companies
+
+
+
 # roka = { name: "Roka", address: "Holborn", borough_id: 2 }
 # dishoom = { name: "Dishoom", address: "Kings Cross", borough_id: 2 }
 # boxpark = { name: "Boxpark", address: "Shoreditch", borough_id: 3 }
@@ -39,6 +55,7 @@ p boroughs
 # virgin_active = { name: "Virgin Active", address: "Hackney", borough_id: 2 }
 # yogi = { name: "Yogi", address: "Kentish Town", borough_id: 3 }
 # oasis = { name: "Oasis sports Center", address: "Holborn", borough_id: 2  }
+
 
 # starbucks = { name: "Starbucks", address: "Euston", borough_id: 3 }
 # saints = { name: "Saints", address: "Camden", borough_id: 3 }

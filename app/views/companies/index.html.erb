@@ -1,1 +1,6 @@
-companies
+<h1>London Companies | Turnover</h1>
+<% @companies.each do |company| %>
+  <ul>
+    <li><p><%= company.borough_id %> - <%= company.name %> - £<%= company.turnover %></p></li>
+  </ul>
+<% end %>
