@@ -67,6 +67,8 @@ body {
   background-image: linear-gradient(to bottom right, $analyse-text-light-blue, $analyse-text-dark-blue);
   justify-content: center;
   text-align: center;
+  // Added margin between sliders and button
+  margin-top: 10px;
 }
 
 .what-we-do-slide {
@@ -79,4 +81,17 @@ body {
   background-color: $background-blue;
   height: 1020px;
   width: 100%;
+}
+
+// Daniels addition with slider. CHECK HOME PAGE!
+.minmax {
+  display: flex;
+  justify-content: space-between;
+}
+.form-range {
+  width: 400px;
+  padding:10px;
+}
+.form-label {
+  padding-left: 20px;
 }
