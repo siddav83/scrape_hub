@@ -1,0 +1,13 @@
+_card.html.erb
+
+<div class="conitaner">
+  <div class="data-card">
+    <h5>Borough</h5>
+    <p>Gross income (£)</p><p>XXk/yr</p>
+    <% @boroughs[0..6].each do |borough| %>
+  <ul>
+    <li><p><%= borough.name %> - £<%= borough.gross_income. %></p></li>
+  </ul>
+  <% end %>
+  </div>
+</div>
