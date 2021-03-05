@@ -15,34 +15,29 @@
     <div class="top-bar d-none d-lg-block">
       <div class="container">
         <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-          <%= link_to "#", class: "navbar-brand" do %>
-            <div class="logo-background">
-              <p class="logo-text">S|H</p>
-            </div>
-          <% end %>
+          <%# <div class="navbar-links"> %>
+            <%= link_to "#", class: "navbar-brand" do %>
+              <div class="logo-background">
+                <p class="logo-text">S|H</p>
+              </div>
+            <% end %>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <%# <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> %>
 
+            <%= link_to "Home", root_path %>
+            <%= link_to "Searches", "https://www.google.com" %>
+            <%= link_to "About Us", "https://www.google.com" %>
+            <%= link_to "Blog", "https://www.google.com" %>
+            <%= link_to("https://www.google.com") do %>
+              <div class="log-out-navbar-button">
+                <p class="log-out-text">Log Out</p>              
+              </div>
+            <% end %>
+          <%# </div>      %>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <%= link_to "Home", "#", class: "nav-link" %>
-              </li>
-              <li class="nav-item">
-                <%= link_to "Messages", "#", class: "nav-link" %>
-              </li>
-              <li class="nav-item dropdown">
-                <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <%= link_to "Action", "#", class: "dropdown-item" %>
-                  <%= link_to "Another action", "#", class: "dropdown-item" %>
-                </div>
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </div>
