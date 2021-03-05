@@ -59,20 +59,21 @@ p companies
 # yogi = { name: "Yogi", address: "Kentish Town", borough_id: 3 }
 # oasis = { name: "Oasis sports Center", address: "Holborn", borough_id: 2  }
 
+
 # starbucks = { name: "Starbucks", address: "Euston", borough_id: 3 }
 # saints = { name: "Saints", address: "Camden", borough_id: 3 }
 # benugo = { name: "Benugo", address: "Hoxton", borough_id: 2 }
 
-# Category
-puts "Creating categories..."
-categories = [{ name: "resturant", }, { name: "sports and recreation" }, { name: "cafe" }]
+# # Category
+# puts "Creating categories..."
+# categories = [{ name: "resturant", }, { name: "sports and recreation" }, { name: "cafe" }]
 
-# iterator to display whats created
-# puts "BOROUGHS"
-# [ westmister, hackney, camden ].each do |attributes|
-#   borough = Borough.create!(attributes)
-#   puts "Created #{borough.name}"
-# end
+# # iterator to display whats created
+# # puts "BOROUGHS"
+# # [ westmister, hackney, camden ].each do |attributes|
+# #   borough = Borough.create!(attributes)
+# #   puts "Created #{borough.name}"
+# # end
 
 # puts "CATEGORIES"
 # categories.each do |attributes|
