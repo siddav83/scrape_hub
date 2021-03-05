@@ -1,0 +1,26 @@
+.data-card {
+  box-shadow: 1px 1px 18px 10px rgb(230, 230, 230);
+}
+.data-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px rgb(230, 230, 230);
+}
+.data-info p {
+  margin: 0;
+  padding: 15px;
+}
+.borough-name {
+  background-color: #41CCB1;
+  background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.borough-name p {
+  margin: 0;
+  padding: 15px;
+}
+.borough-name h1 {
+  font-weight: medium;
+}

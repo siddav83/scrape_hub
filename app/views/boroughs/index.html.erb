@@ -1,17 +1,3 @@
-<h1>London Boroughs | Result </h1>
-<% @boroughs.each do |borough| %>
-  <ul>
-    <li>
-      <p><%= borough.name %></p>
-      <p>- Happiness Score: <%= borough.happiness_score_out_of_10 %> / 10  </p>
-      <p>- Borough area: <%= borough.area %> H2 </p>
-      <p>- Population: <%= borough.population %>  </p>
-      <p>- Average Age: <%= borough.average_age %> - Years Old </p>
-      <p>- Gross average Income: £<%= borough.gross_income %></p>
-      <p>- Two year business survival rates: <%= borough.two_year_business_survival_rates %> %</p>
+<%= render "shared/card" %>
 
-    </li>
-  </ul>
-<% end %>
 
-s
