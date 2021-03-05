@@ -2,7 +2,7 @@
 <% @boroughs.each do |borough| %>
   <ul>
     <li>
-      <p><%= borough.name %></p>
+      <p> <%= link_to borough.name, borough_path(borough)  %> </p>
       <p>- Happiness Score: <%= borough.happiness_score_out_of_10 %> / 10  </p>
       <p>- Borough area: <%= borough.area %> H2 </p>
       <p>- Population: <%= borough.population %>  </p>
