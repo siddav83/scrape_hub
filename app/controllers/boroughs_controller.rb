@@ -8,6 +8,7 @@ class BoroughsController < ApplicationController
     @boroughs = @boroughs.income_min(params[:search][:income_min])
     @boroughs = @boroughs.employment_rate_min(params[:search][:employment_rate_min])
     @boroughs = @boroughs.employment_rate_max(params[:search][:employment_rate_max])
+    @boroughs = @boroughs.limit(3)
   end
 
   def show
@@ -43,7 +44,7 @@ class BoroughsController < ApplicationController
 
 
   def strong_params
-    params.require(:borough).permit(:name, :area, :median_income, :population)
+    params.require(:borough).permit(:name, :area, :gross_income, :population, :employment_rate, :average_age, :two_year_business_survival_rates, :happiness_score_out_of_10)
   end
 end
 
