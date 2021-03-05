@@ -4,6 +4,8 @@ $text-blue: #2A456D;
 $background-blue: #F6F9FC;
 $analyse-text-light-blue: #3A619B;
 $analyse-text-dark-blue: #2B4770;
+$dark-footer-blue: #101C2C;
+$light-footer-blue: #192A42;
 
 body {
   background-color: white;
@@ -21,6 +23,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 150px 0;
+}
+
+.banner-blurb {
+  margin: 25px 0 0 0;
 }
 
 .learn-more-prompt {
@@ -57,9 +63,22 @@ body {
   margin: 25px 0;
   background-color: white;
   color: $text-blue;
+  option {
+    padding: 0 15px;
+  }
 }
 
+ option {
+  height: 60px;
+  width: 687px;
+  border-radius: 30px;
+  text-align: right;
+  border: none;
+ }
+
 .blue-analyse-button {
+  color: white;
+  font-size: 30px;
   height: 68px;
   width: 289px;
   border-radius: 34px;
@@ -67,6 +86,11 @@ body {
   background-image: linear-gradient(to bottom right, $analyse-text-light-blue, $analyse-text-dark-blue);
   justify-content: center;
   text-align: center;
+  margin: 25px 75px 25px 0;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
   // Added margin between sliders and button
   margin-top: 10px;
 }
@@ -83,6 +107,86 @@ body {
   width: 100%;
 }
 
+.how-we-do-it-blurb {
+  display: flex;
+  align-items: center;
+}
+
+.text-blue-background {
+  color: $text-blue;
+  background-color: $background-blue;
+  border-radius: 10px 0 0 10px;
+  height: 391px;
+  width: 451px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  .text-box {
+    height: 345px;
+    width: 313px;
+    margin: 0 0 0 34px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.data-comparison-table {
+  background-color: white;
+  justify-content: right;
+  height: 511px;
+  width: 687px;
+  text-align: center;
+  color: $text-blue;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+thead {
+  background-color: #c4c4c4;
+  border-radius: 15px 0 0 15px;
+}
+
+thead th {
+  width: 22%;
+}
+
+thead th:nth-child(1) {
+  width: 34%;
+}
+
+.big-footer {
+  color: white;
+  width: 100%;
+}
+
+.home-page-upper-footer {
+  background-color: $dark-footer-blue;
+  width: 100%;
+  height: 625px;
+}
+
+.home-page-lower-footer {
+  background-color: $light-footer-blue;
+  width: 100%;
+  height: 625px;
+}
+
+.light-footer-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  :link {
+    text-decoration: none;
+  }
+}
+
+// need to check
 .show-page {
   color: white;
   margin-top: 100px;

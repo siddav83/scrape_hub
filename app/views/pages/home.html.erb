@@ -13,7 +13,15 @@
         </div>
         <div class="col-8">
           <div class="banner-form">
+            <!--
             <div class="dropdown">
+              <select class="analysis-input-dropdown form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected>Category</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+              </select>
+
               <button class="analysis-input-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Category
               </button>
@@ -24,28 +32,31 @@
               </ul>
             </div>
 
-            <div class="dropdown">
-              <button class="analysis-input-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Price Point
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <div class="minmax">
+              <label for="customRange3" class="form-label">Min range</label>
+              <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
+              <label for="customRange3" class="form-label">Max range</label>
+              <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
             </div>
-          </div>
 
-          <div class="minmax">
-            <label for="customRange3" class="form-label">Min range</label>
-            <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
-            <label for="customRange3" class="form-label">Max range</label>
-            <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
-          </div>
+            <div class="" type="button">
+              <button class="blue-analyse-button">ANALYSE</button>
+            </div>
+            -->
 
-
-          <div class="blue-analyse-button" type="button">
-            <button>ANALYSE</button>
+            <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
+              <%= f.input :income_max,
+                            collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                            class: "analysis-input-dropdown" %>
+              <%= f.input :income_min,
+                            collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                            class: "analysis-input-dropdown" %>
+              <%= f.input :employment_rate_min,
+                          collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ] %>
+              <%= f.input :employment_rate_max,
+                          collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ] %>
+              <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
+            <% end %>            
           </div>
         </div>
       </div>
@@ -69,12 +80,66 @@
   <div class="what-we-do-slide">
     <div class="container">
       <div class="how-we-do-it-blurb">
-        <div class="col-4">
-          <h3>Title</h3>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odit minima similique commodi repellat quos adipisci voluptatibus modi cum quasi. Pariatur aliquam inventore optio quidem culpa maiores quaerat voluptates perferendis?</p>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptate, quia enim quod aspernatur fuga molestias, quisquam nesciunt ab sed sapiente, repellat recusandae at qui esse debitis adipisci suscipit possimus!</p>
+        <div class="">
+          <div class="text-blue-background">
+            <div class="text-box">
+              <h3>What we do:</h3>
+              <br>
+              <p><strong>ScrapeHub</strong> uses powerful data anylis techniques to define the best position for your workplace and</p>
+              <br>
+              <p>More blah about the company and what we do, doesn’t really matter, it’s just filler. LIke <strong>carrot sticks</strong> or <strong>smooth jazz</strong>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <table class="data-comparison-table">
+            <thead>
+              <tr class="what-we-do-table">
+                <th class="table-data-borough">Borough</th>
+                <th>Mean Income <br> (£k/yr)</th>
+                <th>Mean Age <br> (yrs)</th>
+                <th>Mean Penis <br> Girth (in)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-data-borough">Xxxxxxxx</td>
+                <td>XX</td>
+                <td>XX</td>
+                <td>X.xx</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Xxxxxxxx</td>
+                <td>XX</td>
+                <td>XX</td>
+                <td>X.xx</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Xxxxxxxx</td>
+                <td>XX</td>
+                <td>XX</td>
+                <td>X.xx</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Xxxxxxxx</td>
+                <td>XX</td>
+                <td>XX</td>
+                <td>X.xx</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Xxxxxxxx</td>
+                <td>XX</td>
+                <td>XX</td>
+                <td>X.xx</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Xxxxxxxx</td>
+                <td>XX</td>
+                <td>XX</td>
+                <td>X.xx</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -84,8 +149,77 @@
 <div class="row">
   <div class="home-page-light-blue">
     <div class="container">
+      <div class="what-we-do-display">
+        <div class="col-4">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
+        </div>
 
+        
+        
+        <%# <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
+          <%# <%= f.input :income_max %>
+          <%# <%= f.input :income_min %> %>
+          <%# <%= f.input :employment_rate_min %> %>
+          <%# <%= f.input :employment_rate_max %> %>
+
+          <%# <%= f.submit %> %> %>
+        <%# <% end %> %> %>
+
+
+        
+        
+      </div>
     </div>
   </div>
 </div>
 
+<div class="row">
+  <div class="big-footer">
+    <div class="home-page-upper-footer">
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus quasi repellat quo inventore officiis explicabo consectetur, quisquam quos vero deleniti? Rerum eum voluptatem nesciunt atque facere, quia consectetur tempore.</p>
+      </div>
+    </div>
+ 
+    <div class="home-page-lower-footer">
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus quasi repellat quo inventore officiis explicabo consectetur, quisquam quos vero deleniti? Rerum eum voluptatem nesciunt atque facere, quia consectetur tempore.</p>
+        <div class="light-footer-links">
+          <ul>
+            <li class="header">Solutions</li>
+            <li><%= link_to "Data", root_path %></li>
+            <li><%= link_to "Sales", root_path %></li>
+            <li><%= link_to "Developers", root_path %></li>
+          </ul>
+          <ul>
+            <li class="header">Products</li>
+            <li><%= link_to "Advertising", root_path %></li>
+            <li><%= link_to "Alerts", root_path %></li>
+            <li><%= link_to "Connect", root_path %></li>
+          </ul><ul>
+            <li class="header">Information</li>
+            <li><%= link_to "Pricing", root_path %></li>
+            <li><%= link_to "Data Attributes", root_path %></li>
+            <li><%= link_to "Support", root_path %></li>
+            <li><%= link_to "Documentation", root_path %></li>
+            <li><%= link_to "Status", root_path %></li>
+            <li><%= link_to "Comparisons", root_path %></li>
+          </ul><ul>
+            <li class="header">Company</li>
+            <li><%= link_to "About", root_path %></li>
+            <li><%= link_to "Blog", root_path %></li>
+            <li><%= link_to "Careers", root_path %></li>
+            <li><%= link_to "Press", root_path %></li>
+            <li><%= link_to "Twitter", root_path %></li>
+            <li><%= link_to "Facebook", root_path %></li>
+          </ul><ul>
+            <li class="header">Legal</li>
+            <li><%= link_to "Claim", root_path %></li>
+            <li><%= link_to "Privacy", root_path %></li>
+            <li><%= link_to "Terms", root_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
