@@ -24,6 +24,7 @@
         <div class="data-info">
           <p>Two yr business survival rate</p><p><%= borough.two_year_business_survival_rates %> %</p>
         </div>
+        <%= link_to borough.name, borough_path(borough) %>
       </div>
     <% end %>
   </div>
