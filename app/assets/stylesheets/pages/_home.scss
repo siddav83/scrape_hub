@@ -149,7 +149,6 @@ body {
 
 thead {
   background-color: #c4c4c4;
-  border-radius: 15px 0 0 15px;
 }
 
 thead th {
@@ -158,6 +157,11 @@ thead th {
 
 thead th:nth-child(1) {
   width: 34%;
+  border-radius: 15px 0 0 0;
+}
+
+thead th:nth-child(4) {
+  border-radius: 0 15px 0 0;
 }
 
 .big-footer {
@@ -181,8 +185,35 @@ thead th:nth-child(1) {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  :link {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    margin: 20px 0;
+  }
+  a {
     text-decoration: none;
+    color: white;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  color: white;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+  a {
+    color: white;
+  }
+  .logo-text {
+    margin-top: -5px;
+  }
+  .logo-background {
+    border: white 2px solid;
   }
 }
 
