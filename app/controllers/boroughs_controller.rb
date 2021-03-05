@@ -1,5 +1,5 @@
 class BoroughsController < ApplicationController
-  before_action :find, only:[:show, :edit, :update, :destroy]
+  before_action :find, only: [:show, :edit, :update, :destroy]
 
 
   def index
