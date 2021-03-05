@@ -42,6 +42,6 @@ class CompaniesController < ApplicationController
   end
 
   def strong_params
-    params.require(:company.permit(:name))
+    params.require(:company.permit(:name, :address, :turnover, :category))
   end
 end
