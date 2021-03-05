@@ -51,12 +51,12 @@ body {
 }
 
 .banner-form {
-  text-align: right;
+  text-align: center;
 }
 
 .analysis-input-dropdown {
   height: 60px;
-  width: 687px;
+  width: 350px;
   border-radius: 30px;
   text-align: right;
   border: none;
@@ -86,7 +86,7 @@ body {
   background-image: linear-gradient(to bottom right, $analyse-text-light-blue, $analyse-text-dark-blue);
   justify-content: center;
   text-align: center;
-  margin: 25px 75px 25px 0;
+  margin: 25px 0; // 75px normally
   &:hover {
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 10;
