@@ -3,6 +3,8 @@ class BoroughsController < ApplicationController
 
 
   def index
+    raise
+  
     @boroughs = Borough.all
     @boroughs = @boroughs.income_max(params[:search][:income_max])
     @boroughs = @boroughs.income_min(params[:search][:income_min])
