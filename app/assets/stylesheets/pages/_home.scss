@@ -217,7 +217,7 @@ thead th:nth-child(4) {
   }
 }
 
-// need to check
+// SHOW PAGE STARTS HERE
 .show-page {
   color: white;
   margin-top: 100px;
@@ -230,6 +230,8 @@ thead th:nth-child(4) {
 }
 
 .show-map {
+  background-position: center;
+  background-size: auto;
   border: 2px white solid;
   border-radius: 50px;
   height: 471px;
@@ -255,6 +257,7 @@ thead th:nth-child(4) {
 .borough-details p {
   font-size: 14px;
 }
+// SHOW PAGE ENDS HERE
 
 // Daniels addition with slider. CHECK HOME PAGE!
 .minmax {
