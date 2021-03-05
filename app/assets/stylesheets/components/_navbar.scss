@@ -1,6 +1,15 @@
 .navbar-lewagon {
   justify-content: space-between;
   margin: 0 20px;
+  text-decoration: none;
+  color: black;
+  a {
+    color: black;
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+  }
 }
 
 .top-bar {
@@ -24,4 +33,34 @@
 .logo-text {
   text-align: center; 
   font-size: 40px;
+  margin-top: -5px;
+}
+
+.navbar_links {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.log-out-navbar-button {
+  text-align: center;
+  justify-content: center;
+  height: 40px;
+  width: 130px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: black 2px solid;
+  &:hover {
+    border: rgba(0, 0, 0, 0.4) 2px solid;
+  }
+}
+
+.log-out-text {
+  margin-top: 3px;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+  }
 }

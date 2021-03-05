@@ -45,16 +45,30 @@
             -->
 
             <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
-              <%= f.input :income_max,
+              <div class="d-flex justify-content-between">
+                <%= f.input :income_min,
+                            label: false,
+                            prompt: "Minimum income",
+                            collection: [ 20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000,60_000],
+                            input_html: { class: "analysis-input-dropdown" } %>
+                <%= f.input :income_max,
+                            label: false,
+                            prompt: "Maximum income",
                             collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
-                            class: "analysis-input-dropdown" %>
-              <%= f.input :income_min,
-                            collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
-                            class: "analysis-input-dropdown" %>
-              <%= f.input :employment_rate_min,
-                          collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ] %>
-              <%= f.input :employment_rate_max,
-                          collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ] %>
+                            input_html: { class: "analysis-input-dropdown"} %>
+              </div>
+              <div class="d-flex justify-content-between">
+                <%= f.input :employment_rate_min,
+                            label: false,
+                            prompt: "Minimum employment rate (%)",
+                            collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ],
+                            input_html: { class: "analysis-input-dropdown"} %>
+                <%= f.input :employment_rate_max,
+                            label: false,
+                            prompt: "Maximum employment rate (%)",
+                            collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ],
+                            input_html: { class: "analysis-input-dropdown"} %>
+              </div>
               <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
             <% end %>            
           </div>
@@ -91,15 +105,18 @@
             </div>
           </div>
         </div>
+        
         <div class="">
           <table class="data-comparison-table">
             <thead>
-              <tr class="what-we-do-table">
-                <th class="table-data-borough">Borough</th>
-                <th>Mean Income <br> (£k/yr)</th>
-                <th>Mean Age <br> (yrs)</th>
-                <th>Mean Penis <br> Girth (in)</th>
-              </tr>
+              <%# <div class="data-comparison-table-header"> %>
+                <tr class="what-we-do-table">
+                  <th class="table-data-borough">Borough</th>
+                  <th>Mean Income <br> (£k/yr)</th>
+                  <th>Mean Age <br> (yrs)</th>
+                  <th>Average <br> Manliness (in)</th>
+                </tr>
+              <%# </div> %>
             </thead>
             <tbody>
               <tr>
@@ -152,22 +169,8 @@
       <div class="what-we-do-display">
         <div class="col-4">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
-        </div>
-
-        
-        
-        <%# <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
-          <%# <%= f.input :income_max %>
-          <%# <%= f.input :income_min %> %>
-          <%# <%= f.input :employment_rate_min %> %>
-          <%# <%= f.input :employment_rate_max %> %>
-
-          <%# <%= f.submit %> %> %>
-        <%# <% end %> %> %>
-
-
-        
-        
+          <br>
+        </div>      
       </div>
     </div>
   </div>
@@ -184,6 +187,8 @@
     <div class="home-page-lower-footer">
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus quasi repellat quo inventore officiis explicabo consectetur, quisquam quos vero deleniti? Rerum eum voluptatem nesciunt atque facere, quia consectetur tempore.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia dicta blanditiis nobis? Delectus optio debitis nostrum doloremque laboriosam quam asperiores adipisci mollitia corporis illum, aperiam, non neque vero repellendus.</p>
         <div class="light-footer-links">
           <ul>
             <li class="header">Solutions</li>
@@ -219,7 +224,18 @@
             <li><%= link_to "Terms", root_path %></li>
           </ul>
         </div>
+        <div class="footer-logo">
+          <%= link_to "#", class: "navbar-brand" do %>
+            <div class="logo-background">
+              <p class="logo-text">S|H</p>
+            </div>
+          <% end %>
+          <div class="copyright-info">
+            <p><i class="far fa-copyright"></i> ScrapeHub 2021</p>          
+          </div>
+        </div>
       </div>
+      <%# <span></span> %>
     </div>
   </div>
 </div>
