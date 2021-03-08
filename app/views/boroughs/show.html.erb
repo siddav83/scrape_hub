@@ -3,62 +3,16 @@
     <div class="container">
       <div class="show-page">
         <div class="borough-details col-8">
-          <h3 class="borough-name">City of London</h3>
+          <h3 class="borough-name"><%= @borough.name %></h3>
           <div class="show-borough-info">
             <%= render "shared/card_info", borough: @borough %>
+            <br>
             <h4>Business Information </h4>
             <p><%= @borough.description %></p>
             <br>
             <h4>Competition Analysis</h4>
             <p><div class="">
-          <table class="data-comparison-table">
-            <thead>
-              <tr class="what-we-do-table">
-                <th class="table-data-borough"></th>
-                <th>Virgin Active <br></th>
-                <th>PureGym <br></th>
-                <th>Anytime Fitness <br></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="table-data-borough">Date of Incorporation</td>
-                <td>1999</td>
-                <td>2009</td>
-                <td>2002</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">CEO</td>
-                <td>Matthew Bucknall</td>
-                <td>Humphrey Cobbold</td>
-                <td>Chuck Runyon</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Number of Employees 2019</td>
-                <td>900</td>
-                <td>800</td>
-                <td>692</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Turnover 2019</td>
-                <td>563.7 £ Million</td>
-                <td>260 £ Million</td>
-                <td>421,8 £ Million</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Profit 2019</td>
-                <td>160,5</td>
-                <td>105 £ Million</td>
-                <td>114,611 £ Million</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Members</td>
-                <td>1,2 Million</td>
-                <td>1.1 Million</td>
-                <td>3.3 Million</td>
-              </tr>
-            </tbody>
-          </table>
+          <%= render "shared/company_analysis", company: @company %>
         </div></p>
           </div>
        </div>
