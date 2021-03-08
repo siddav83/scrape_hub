@@ -8,7 +8,7 @@ class BoroughsController < ApplicationController
     @boroughs = @boroughs.income_min(params[:search][:income_min])
     @boroughs = @boroughs.employment_rate_min(params[:search][:employment_rate_min])
     @boroughs = @boroughs.employment_rate_max(params[:search][:employment_rate_max])
-    @boroughs = @boroughs.limit(3)
+    @top_income = @boroughs.order(gross_income: :desc).first
   end
 
   def show

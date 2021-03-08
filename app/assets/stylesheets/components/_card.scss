@@ -6,21 +6,48 @@
   justify-content: space-between;
   border-bottom: solid 1px rgb(230, 230, 230);
 }
+.top-ranking {
+  box-shadow: 1px 1px 18px 10px rgba(255, 255, 10, 0.3);
+  border: solid 3px #FFFF0A;
+  border-radius: 5px;
+}
+
 .data-info p {
   margin: 0;
   padding: 15px;
 }
+.data-info-col {
+  text-align: center;
+  padding: 15px;
+}
+#star {
+  color: #FFC65A;
+}
+
 .borough-name {
   background-color: #41CCB1;
   background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
   color: white;
   border-radius: 5px 5px 0px 0px;
+  padding: 15px;
+  text-align: center;
 }
 
-.borough-name p {
+.borough-name a {
   margin: 0;
-  padding: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+.borough-name a:hover {
+  color: #167FFB
 }
 .borough-name h1 {
   font-weight: medium;
 }
+// #stars_5 {
+//   display: none;
+// }
+// #stars_5:hover p {
+//   display: block;
+// }
