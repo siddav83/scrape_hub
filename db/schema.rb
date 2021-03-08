@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_08_111314) do
+
+ActiveRecord::Schema.define(version: 2021_03_08_114620) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +28,7 @@ ActiveRecord::Schema.define(version: 2021_03_08_111314) do
     t.integer "average_age"
     t.integer "two_year_business_survival_rates"
     t.integer "happiness_score_out_of_10"
+    t.text "description"
   end
 
   create_table "categories", force: :cascade do |t|

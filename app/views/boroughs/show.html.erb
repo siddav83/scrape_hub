@@ -6,10 +6,8 @@
           <h3 class="borough-name">City of London</h3>
           <div class="show-borough-info">
             <%= render "shared/card_info", borough: @borough %>
-
             <h4>Business Information </h4>
-            <p>The City is a major business and financial centre, and the Bank of England is headquartered in the City. Throughout the 19th century, the City was the world's primary business centre, and it continues to be a major meeting point for businesses.</p>
-            <p></p>
+            <p><%= @borough.description %></p>
             <br>
             <h4>Competition Analysis</h4>
             <p><div class="">
