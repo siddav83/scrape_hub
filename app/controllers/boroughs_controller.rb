@@ -12,6 +12,7 @@ class BoroughsController < ApplicationController
   end
 
   def show
+    @companies = @borough.companies
   end
 
   def new
