@@ -1,3 +1,4 @@
+<%= render "shared/navbar" %>
 <div class="row">
   <div class="home-main-banner">
     <div class="container">
@@ -46,6 +47,13 @@
 
             <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
               <div class="d-flex justify-content-between">
+                <%= f.input :category,
+                            label: false,
+                            prompt: "Business Category",
+                            collection: [ "Leisure and Fitness", "Food and Drink", "Property", "Retail", "Law", "Fincancial"],
+                            input_html: { class: "analysis-input-dropdown" } %>
+              </div>
+              <div class="d-flex justify-content-between">
                 <%= f.input :income_min,
                             label: false,
                             prompt: "Minimum income",
@@ -55,18 +63,6 @@
                             label: false,
                             prompt: "Maximum income",
                             collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
-                            input_html: { class: "analysis-input-dropdown"} %>
-              </div>
-              <div class="d-flex justify-content-between">
-                <%= f.input :employment_rate_min,
-                            label: false,
-                            prompt: "Minimum employment rate (%)",
-                            collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ],
-                            input_html: { class: "analysis-input-dropdown"} %>
-                <%= f.input :employment_rate_max,
-                            label: false,
-                            prompt: "Maximum employment rate (%)",
-                            collection: [ 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ],
                             input_html: { class: "analysis-input-dropdown"} %>
               </div>
               <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
@@ -186,9 +182,6 @@
  
     <div class="home-page-lower-footer">
       <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus quasi repellat quo inventore officiis explicabo consectetur, quisquam quos vero deleniti? Rerum eum voluptatem nesciunt atque facere, quia consectetur tempore.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia dicta blanditiis nobis? Delectus optio debitis nostrum doloremque laboriosam quam asperiores adipisci mollitia corporis illum, aperiam, non neque vero repellendus.</p>
         <div class="light-footer-links">
           <ul>
             <li class="header">Solutions</li>
