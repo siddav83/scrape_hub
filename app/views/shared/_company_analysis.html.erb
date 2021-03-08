@@ -2,47 +2,49 @@
             <thead>
               <tr class="what-we-do-table">
                 <th class="table-data-borough"></th>
-                <th>Virgin Active <br></th>
-                <th>PureGym <br></th>
-                <th>Anytime Fitness <br></th>
+                <% companies.each do |company| %>
+                <th><%= company.name %><br></th>
+                <% end %>
+
+                <th><br></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="table-data-borough">Date of Incorporation</td>
-
-                <td>2009</td>
-                <td>2002</td>
+                <% companies.each do |company| %>
+                <td><%= company.date_of_incoporation %></td>
+                <% end %>
               </tr>
               <tr>
                 <td class="table-data-borough">CEO</td>
-                <td>Matthew Bucknall</td>
-                <td>Humphrey Cobbold</td>
-                <td>Chuck Runyon</td>
+                <% companies.each do |company| %>
+                <td><%= company.ceo %></td>
+                <% end %>
               </tr>
               <tr>
                 <td class="table-data-borough">Number of Employees 2019</td>
-                <td>900</td>
-                <td>800</td>
-                <td>692</td>
+                <% companies.each do |company| %>
+                <td><%= company.number_of_employees %></td>
+                <% end %>
               </tr>
               <tr>
                 <td class="table-data-borough">Turnover 2019</td>
-                <td>563.7 £ Million</td>
-                <td>260 £ Million</td>
-                <td>421,8 £ Million</td>
+                <% companies.each do |company| %>
+                <td><%= company.turnover %></td>
+                <% end %>
               </tr>
               <tr>
                 <td class="table-data-borough">Profit 2019</td>
-                <td>160,5</td>
-                <td>105 £ Million</td>
-                <td>114,611 £ Million</td>
+                <% companies.each do |company| %>
+                <td><%= company.profit %></td>
+                <% end %>
               </tr>
               <tr>
                 <td class="table-data-borough">Members</td>
-                <td>1,2 Million</td>
-                <td>1.1 Million</td>
-                <td>3.3 Million</td>
+                <% companies.each do |company| %>
+                <td><%= company.members %></td>
+                <% end %>
               </tr>
             </tbody>
           </table>

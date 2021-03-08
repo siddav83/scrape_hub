@@ -7,4 +7,6 @@ class Borough < ApplicationRecord
   scope :employment_rate_min, -> (amount) { where("employment_rate >= ?", amount) }
   scope :employment_rate_max, -> (amount) { where("employment_rate <= ?", amount) }
 
+  scope :borough_id, -> (amount) { where("borough_id >= ?", amount) }
+
 end
