@@ -2,12 +2,11 @@
   <h1>London Boroughs | Result </h1>
     <div class="card-container">
       <% @boroughs.each do |borough| %>
-    <div class="data-card">
+    <div class="data-card <%= 'top-ranking' if borough == @top_income %>">
       <div class="borough-name">
-        <p><%= borough.name %></p>
+        <a> <%= link_to borough.name, borough_path(borough) %></a>
       </div>
         <%= render "shared/card_info", borough: borough %>
-        <%= link_to borough.name, borough_path(borough) %>
       </div>
     <% end %>
   </div>
