@@ -1,10 +1,12 @@
 .navbar-lewagon {
+  background-color: transparent;
+  transition: 0.5s background-color ease;
   justify-content: space-between;
   margin: 0 20px;
   text-decoration: none;
-  color: black;
+  color: white;
   a {
-    color: black;
+    color: white;
   }
   a:hover {
     color: rgba(0, 0, 0, 0.4);
@@ -15,6 +17,7 @@
 .top-bar {
   background-color: transparent;
 }
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
@@ -27,11 +30,12 @@
 .logo-background {
   width: 107px;
   height: 54px;
-  border: black 2px solid;
+  border: white 2px solid;
 }
 
 .logo-text {
-  text-align: center; 
+  color: white;
+  text-align: center;
   font-size: 40px;
   margin-top: -5px;
 }
@@ -39,7 +43,7 @@
 .navbar_links {
   display: flex;
   justify-content: space-between;
-  color: black;
+  color: white;
 }
 
 .log-out-navbar-button {
@@ -49,7 +53,7 @@
   width: 130px;
   font-size: 20px;
   border-radius: 20px;
-  border: black 2px solid;
+  border: white 2px solid;
   &:hover {
     border: rgba(0, 0, 0, 0.4) 2px solid;
   }
@@ -58,9 +62,37 @@
 .log-out-text {
   margin-top: 3px;
   text-decoration: none;
-  color: black;
+  color: white;
   &:hover {
     color: rgba(0, 0, 0, 0.4);
     text-decoration: none;
+  }
+}
+
+.top-bar-white {
+  background-color: white;
+  .logo-text {
+    color: black;
+  }
+  .logo-background {
+    border: black 2px solid;
+  }
+  .log-out-text {
+    color: black;
+  }
+  .log-out-text:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .log-out-navbar-button {
+    border: black 2px solid;
+  }
+  .log-out-navbar-button:hover {
+    border: rgba(0, 0, 0, 0.5) 2px solid;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.6);
   }
 }

@@ -5,17 +5,9 @@
         <div class="borough-details col-8">
           <h3 class="borough-name">City of London</h3>
           <div class="show-borough-info">
-            <h4>Main Information of the borough (£)</h4>
-            <p><li> Happiness Score: 6 / 10 </li>
-            <p><li> Borough area: 290 H2 </li>
-            <p><li> Population: 8800 </li>
-            <p><li> Average Age: 43 - Years Old </li>
-            <p><li> Gross average Income: £60000 </li>
-            <p><li> Two year business survival rates: 64 % </li>
-            </li></p>
+            <%= render "shared/card_info", borough: @borough %>
             <h4>Business Information </h4>
-            <p>The City is a major business and financial centre, and the Bank of England is headquartered in the City. Throughout the 19th century, the City was the world's primary business centre, and it continues to be a major meeting point for businesses.</p>
-            <p></p>
+            <p><%= @borough.description %></p>
             <br>
             <h4>Competition Analysis</h4>
             <p><div class="">
@@ -70,8 +62,8 @@
         </div></p>
           </div>
        </div>
-          <div class="show-map col-4">
-          <div class="show-map col-4" style="background-image: url('<%= image_path "COL.png" %>')">
+          <div class="show-map">
+          <div class="show-map" style="background-image: url('<%= image_path "COL.png" %>')">
          </div>
      </div>
 
