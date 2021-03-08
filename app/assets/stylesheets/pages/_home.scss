@@ -232,10 +232,10 @@ thead th:nth-child(4) {
 .show-map {
   background-position: center;
   background-size: auto;
-  border: 2px white solid;
   border-radius: 50px;
   height: 471px;
   width: 380px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
  .borough-details h3, h4 {
