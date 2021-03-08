@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2021_03_08_114620) do
-
+ActiveRecord::Schema.define(version: 2021_03_08_150957) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +43,11 @@ ActiveRecord::Schema.define(version: 2021_03_08_114620) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "turnover"
     t.string "category"
+    t.integer "date_of_incoporation"
+    t.string "ceo"
+    t.float "number_of_employees"
+    t.float "profit"
+    t.float "members"
     t.index ["borough_id"], name: "index_companies_on_borough_id"
   end
 
