@@ -1,7 +1,6 @@
 <div class="top-bar d-none d-lg-block fixed-top">
   <div class="container">
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-      <% if user_signed_in? %>
         <%= link_to "/", class: "navbar-brand" do %>
           <div class="logo-background">
             <p class="logo-text">S|H</p>
@@ -11,14 +10,18 @@
         <%= link_to "Searches", "https://www.google.com" %>
         <%= link_to "About Us", "https://www.google.com" %>
         <%= link_to "Blog", "https://www.google.com" %>
-        <%= link_to destroy_user_session_path, method: :delete do %>
-          <div class="log-out-navbar-button">
-            <p class="log-out-text">Log Out</p>
-          </div>
-        <% end %>
-      <% else %>
-        <%= link_to 'Sign Up', new_user_registration_path  %>
-        <%= link_to 'Sign In', new_user_session_path  %>
+        <% if user_signed_in? %>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <div class="log-out-navbar-button">
+              <p class="log-out-text">Log Out</p>
+            </div>
+          <% end %>
+        <% else %>
+          <%= link_to new_user_session_path do %>
+            <div class="log-out-navbar-button">
+              <p class="log-out-text">Log In</p>
+            </div>
+          <% end %>
         <% end %>
     </div>
   </div>
