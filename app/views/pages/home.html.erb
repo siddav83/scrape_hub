@@ -19,9 +19,12 @@
                 <%= f.input :category,
                             label: false,
                             prompt: "Business Category",
-                            collection: [ "Leisure and Fitness", "Food and Drink", "Property", "Retail", "Law", "Fincancial"],
-                            input_html: { class: "analysis-input-dropdown" } %>
+                            collection: [ "Leisure and Fitness", "Food and Drink", "Property", "Retail", "Law", "Financial"],
+                            input_html: { class: "analysis-input-dropdown-wide" } %>
               </div>
+              <%# <div class="price-point-income-slider"> %>
+                <%# <%= f.input :median_income, as: :range, prompt: "median_income", input_html: { class: "analysis-input-slider" } %> %>
+              <%# </div> %>
               <div class="d-flex justify-content-between">
                 <%= f.input :income_min,
                             label: false,
