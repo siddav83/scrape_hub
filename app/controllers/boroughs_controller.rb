@@ -39,9 +39,15 @@ class BoroughsController < ApplicationController
   end
 
   def bookmark
-    p params
-    @borough = Borough.find(params[:format])
     @bookmark = Bookmark.new
+    if params[:category].present?
+      @bookmark.category = params[:category]
+    else
+      @bookmark.category = nil
+    end
+
+    @borough = Borough.find(params[:format])
+
     p @bookmark
     @bookmark.borough = @borough
     p @bookmark

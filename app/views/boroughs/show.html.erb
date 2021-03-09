@@ -26,9 +26,10 @@
               data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
         </div>
         <% if @bookmark.nil? %>
-          <%= link_to bookmark_path(@borough), method: :post, remote: true do %>
-            click
-          <% end %>
+        <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
+        click
+        <% end %>
+
         <% else %>
           Already in your bookmarks
         <% end %>
