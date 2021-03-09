@@ -13,6 +13,7 @@ class BoroughsController < ApplicationController
     #@companies = @borough.companies
     @bookmark = Bookmark.find_by(borough: @borough)
     @companies = @borough.companies.where(category: params[:category])
+    @markers = { lat: @borough.latitude.to_s, lng: @borough.longitude.to_s }
   end
 
   def new

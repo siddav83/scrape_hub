@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 2021_03_08_165133) do
     t.integer "two_year_business_survival_rates"
     t.integer "happiness_score_out_of_10"
     t.text "description"
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "categories", force: :cascade do |t|
