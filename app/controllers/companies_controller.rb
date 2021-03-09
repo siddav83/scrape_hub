@@ -4,7 +4,7 @@ class CompaniesController < ApplicationController
 
   def index
     @companies = Company.all
-    @companies = @companies.turnover_min(1000)
+    @companies = @companies.turnover_min(10)
     # @companies = @companies.turnover_max(5000)
 
   end

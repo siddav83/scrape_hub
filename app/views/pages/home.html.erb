@@ -1,4 +1,4 @@
-<%= render "shared/navbar" %>
+
 <div class="row">
   <div class="home-main-banner">
     <div class="container">
@@ -14,45 +14,17 @@
         </div>
         <div class="col-8">
           <div class="banner-form">
-            <!--
-            <div class="dropdown">
-              <select class="analysis-input-dropdown form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                  <option selected>Category</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-              </select>
-
-              <button class="analysis-input-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Category
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-
-            <div class="minmax">
-              <label for="customRange3" class="form-label">Min range</label>
-              <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
-              <label for="customRange3" class="form-label">Max range</label>
-              <input type="range" class="form-range" min="20000" max="60000" step="5000" id="customRange3">
-            </div>
-
-            <div class="" type="button">
-              <button class="blue-analyse-button">ANALYSE</button>
-            </div>
-            -->
-
             <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
               <div class="d-flex justify-content-between">
                 <%= f.input :category,
                             label: false,
                             prompt: "Business Category",
-                            collection: [ "Leisure and Fitness", "Food and Drink", "Property", "Retail", "Law", "Fincancial"],
-                            input_html: { class: "analysis-input-dropdown" } %>
+                            collection: [ "Leisure and Fitness", "Food and Drink", "Property", "Retail", "Law", "Financial"],
+                            input_html: { class: "analysis-input-dropdown-wide" } %>
               </div>
+              <%# <div class="price-point-income-slider"> %>
+                <%# <%= f.input :median_income, as: :range, prompt: "median_income", input_html: { class: "analysis-input-slider" } %> %>
+              <%# </div> %>
               <div class="d-flex justify-content-between">
                 <%= f.input :income_min,
                             label: false,
@@ -66,7 +38,7 @@
                             input_html: { class: "analysis-input-dropdown"} %>
               </div>
               <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
-            <% end %>            
+            <% end %>
           </div>
         </div>
       </div>
@@ -101,7 +73,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="">
           <table class="data-comparison-table">
             <thead>
@@ -166,7 +138,7 @@
         <div class="col-4">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
           <br>
-        </div>      
+        </div>
       </div>
     </div>
   </div>
@@ -179,7 +151,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus quasi repellat quo inventore officiis explicabo consectetur, quisquam quos vero deleniti? Rerum eum voluptatem nesciunt atque facere, quia consectetur tempore.</p>
       </div>
     </div>
- 
+
     <div class="home-page-lower-footer">
       <div class="container">
         <div class="light-footer-links">
@@ -224,7 +196,7 @@
             </div>
           <% end %>
           <div class="copyright-info">
-            <p><i class="far fa-copyright"></i> ScrapeHub 2021</p>          
+            <p><i class="far fa-copyright"></i> ScrapeHub 2021</p>
           </div>
         </div>
       </div>

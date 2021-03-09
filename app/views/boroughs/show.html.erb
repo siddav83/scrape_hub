@@ -12,20 +12,19 @@
             <br>
             <h4>Competition Analysis</h4>
             <p><div class="">
-          <%= render "shared/company_analysis", company: @company %>
-        </div></p>
+
+              <%= render "shared/company_analysis", companies: @companies %>
+            </div></p>
           </div>
-       </div>
-          <div class="show-map">
+        </div>
+        <div class="show-map">
           <div class="show-map" style="background-image: url('<%= image_path "COL.png" %>')">
-         </div>
-     </div>
-     <%= link_to bookmark_path(@borough), method: :post, remote: true do %>
-      click
-     <% end %>
-
-
+          </div>
+        </div>
+        <%= link_to bookmark_path(@borough), method: :post, remote: true do %>
+        click
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 
