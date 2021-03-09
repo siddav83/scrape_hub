@@ -7,4 +7,6 @@ class Borough < ApplicationRecord
 
   scope :borough_id, -> (amount) { where("borough_id >= ?", amount) }
 
+
+
 end
