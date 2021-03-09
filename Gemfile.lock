@@ -94,6 +94,7 @@ GEM
     ffi (1.14.2)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
+    geocoder (1.6.6)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     haml (5.2.1)
@@ -260,7 +261,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass
-  haml-rails (~> 2.0)
+  geocoder
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
@@ -283,4 +284,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.1.0
+   2.2.11

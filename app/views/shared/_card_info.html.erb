@@ -1,4 +1,6 @@
 <div class="data-info">
+           </div>
+        <div class="data-info">
           <p id="star"> ★ <%= (borough.happiness_score_out_of_10 / 2.to_f) %> </p><p> <b>Population</b> <%= borough.population %> </p>
         </div>
         <div class="data-info">
@@ -12,3 +14,8 @@
           <p><b>Business Survival rates</b>(2yrs)</p>
           <p><%= borough.two_year_business_survival_rates %> %</p>
         </div>
+        <div class="data-info">
+          <p><b>Number of Company</b></p>
+          <p><%= @companies.where(borough: borough).count %></p>
+        </div>
+
