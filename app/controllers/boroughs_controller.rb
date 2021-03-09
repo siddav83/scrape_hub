@@ -1,16 +1,18 @@
 class BoroughsController < ApplicationController
   before_action :find, only: [:show, :edit, :update, :destroy]
 
-
   def index
     @boroughs = Borough.all
     @boroughs = @boroughs.income_max(params[:search][:income_max])
     @boroughs = @boroughs.income_min(params[:search][:income_min])
     @top_income = @boroughs.order(gross_income: :desc).first
+    @companies = Company.category_search(params[:search][:category])
   end
 
   def show
-    @companies = @borough.companies
+    #@companies = @borough.companies
+    @bookmark = Bookmark.find_by(borough: @borough)
+    @companies = @borough.companies.where(category: params[:category])
     @markers = { lat: @borough.latitude.to_s, lng: @borough.longitude.to_s }
   end
 
@@ -36,15 +38,27 @@ class BoroughsController < ApplicationController
     redirect_to root_path
   end
 
+  def bookmark
+    p params
+    @borough = Borough.find(params[:format])
+    @bookmark = Bookmark.new
+    p @bookmark
+    @bookmark.borough = @borough
+    p @bookmark
+    @bookmark.user = current_user
+    p @bookmark
+    if @bookmark.save
+      redirect_to borough_path(@borough)
+    end
+  end
+
   private
 
   def find
     @borough = Borough.find(params[:id])
   end
 
-
   def strong_params
     params.require(:borough).permit(:name, :area, :gross_income, :population, :employment_rate, :average_age, :two_year_business_survival_rates, :happiness_score_out_of_10)
   end
 end
-
