@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find(params[:id])
+  def my_bookmarks
+    @boroughs = current_user.boroughs
   end
 end

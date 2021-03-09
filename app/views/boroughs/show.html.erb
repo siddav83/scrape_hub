@@ -21,9 +21,13 @@
           <div class="show-map" style="background-image: url('<%= image_path "COL.png" %>')">
           </div>
         </div>
+        <% if @bookmark.nil? %>
         <%= link_to bookmark_path(@borough), method: :post, remote: true do %>
         click
         <% end %>
+        <% else %>
+         Already in your bookmarks
+         <% end %>
       </div>
     </div>
   </div>

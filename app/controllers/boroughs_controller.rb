@@ -1,7 +1,6 @@
 class BoroughsController < ApplicationController
   before_action :find, only: [:show, :edit, :update, :destroy]
 
-
   def index
     @boroughs = Borough.all
     @boroughs = @boroughs.income_max(params[:search][:income_max])
@@ -11,6 +10,7 @@ class BoroughsController < ApplicationController
 
   def show
     @companies = @borough.companies
+    @bookmark = Bookmark.find_by(borough: @borough)
   end
 
   def new
@@ -44,7 +44,9 @@ class BoroughsController < ApplicationController
     p @bookmark
     @bookmark.user = current_user
     p @bookmark
-    @bookmark.save
+    if @bookmark.save
+      redirect_to borough_path(@borough)
+    end
   end
 
   private
@@ -53,9 +55,7 @@ class BoroughsController < ApplicationController
     @borough = Borough.find(params[:id])
   end
 
-
   def strong_params
     params.require(:borough).permit(:name, :area, :gross_income, :population, :employment_rate, :average_age, :two_year_business_survival_rates, :happiness_score_out_of_10)
   end
 end
-
