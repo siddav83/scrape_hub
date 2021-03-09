@@ -11,7 +11,7 @@ class BoroughsController < ApplicationController
 
   def show
     @companies = @borough.companies
-    @markers = { lat: @borough.latitude, lng: @borough.longitude }
+    @markers = { lat: @borough.latitude.to_s, lng: @borough.longitude.to_s }
   end
 
   def new
