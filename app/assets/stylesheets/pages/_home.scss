@@ -68,6 +68,20 @@ body {
   }
 }
 
+.analysis-input-dropdown-wide {
+  height: 60px;
+  width: 710px;
+  border-radius: 30px;
+  text-align: right;
+  border: none;
+  margin: 25px 0;
+  background-color: white;
+  color: $text-blue;
+  option {
+    padding: 0 15px;
+  }
+}
+
  option {
   height: 60px;
   width: 687px;

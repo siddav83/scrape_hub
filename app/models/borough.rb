@@ -1,4 +1,5 @@
 class Borough < ApplicationRecord
+  has_many :bookmarks
   has_many :companies
 
   scope :income_max, -> (amount) { where("gross_income <= ?", amount) }
@@ -6,5 +7,7 @@ class Borough < ApplicationRecord
 
 
   scope :borough_id, -> (amount) { where("borough_id >= ?", amount) }
+
+
 
 end

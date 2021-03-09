@@ -13,15 +13,22 @@
             <h4>Competition Analysis</h4>
             <p><div class="">
 
-          <%= render "shared/company_analysis", companies: @companies %>
-        </div></p>
+              <%= render "shared/company_analysis", companies: @companies %>
+            </div></p>
           </div>
-       </div>
-          <div class="show-map">
+        </div>
+        <div class="show-map">
           <div class="show-map" style="background-image: url('<%= image_path "COL.png" %>')">
-         </div>
-     </div>
+          </div>
+        </div>
+        <% if @bookmark.nil? %>
+        <%= link_to bookmark_path(@borough), method: :post, remote: true do %>
+        click
+        <% end %>
+        <% else %>
+         Already in your bookmarks
+         <% end %>
+      </div>
     </div>
   </div>
-</div>
 
