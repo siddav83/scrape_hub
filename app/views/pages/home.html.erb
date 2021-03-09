@@ -19,7 +19,7 @@
                 <%= f.input :category,
                             label: false,
                             prompt: "Business Category",
-                            collection: [ "Leisure and Fitness", "Food and Drink", "Property", "Retail", "Law", "Financial"],
+                            collection: Company.all.pluck(:category).uniq,
                             input_html: { class: "analysis-input-dropdown-wide" } %>
               </div>
               <%# <div class="price-point-income-slider"> %>
