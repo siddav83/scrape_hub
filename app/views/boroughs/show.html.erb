@@ -22,7 +22,7 @@
           </div>
         </div>
         <% if @bookmark.nil? %>
-        <%= link_to bookmark_path(@borough), method: :post, remote: true do %>
+        <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
         click
         <% end %>
         <% else %>
