@@ -10,7 +10,7 @@
         <%= link_to "Searches", "https://www.google.com" %>
         <%= link_to "About Us", "https://www.google.com" %>
         <%= link_to "Blog", "https://www.google.com" %>
-        <%= link_to "My Books", signed_in? ? my_bookmarks_path(current_user) : new_user_session_path %>
+        <%= link_to "My Books", my_bookmarks_path  %>
         <% if user_signed_in? %>
           <%= link_to destroy_user_session_path, method: :delete do %>
             <div class="log-out-navbar-button">
