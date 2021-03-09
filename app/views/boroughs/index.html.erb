@@ -1,4 +1,7 @@
-<%= render "shared/card" %>
+<% content_for :for_head do %>
+  <title>ScrapeHub | Boroughs by <%= params[:search][:category] %></title>
+<% end %>
 
-
-
+<div class="index-container">
+  <%= render "shared/card" %>
+</div>

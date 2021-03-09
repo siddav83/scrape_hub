@@ -2,8 +2,13 @@
 <html>
   <head>
     <% title = 'ScrapeHub: Market Analysis with High Level Data Processing.' %>
+    <% if content_for? :for_head %>
+      <%= yield :for_head %>
+    <% else %>
+      <title><%= title %></title>
+    <% end %>
+
     <% description = 'Scrapehub is a data analytics company which specialise in location analysis for business competition. We were founded by our great leader, David Siddle, whose vision is unmatched and whose word is law. All hail the great leader... ALL HAIL' %>
-    <title><%= title %></title>
     <meta name="description" content="<%= description %>">
     <meta name="keywords" content="..."> 
     <meta property="og:title" content="<%= title %>">
