@@ -4,7 +4,7 @@
       <% @boroughs.each do |borough| %>
     <div class="data-card <%= 'top-ranking' if borough == @top_income %>">
       <div class="borough-name">
-        <a> <%= link_to borough.name, borough_path(borough) %></a>
+        <a> <%= link_to borough.name, borough_path(borough, hello: "hello") %></a>
       </div>
         <%= render "shared/card_info", borough: borough %>
       </div>

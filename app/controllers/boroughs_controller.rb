@@ -6,8 +6,8 @@ class BoroughsController < ApplicationController
     @boroughs = Borough.all
     @boroughs = @boroughs.income_max(params[:search][:income_max])
     @boroughs = @boroughs.income_min(params[:search][:income_min])
-    @boroughs = @boroughs.employment_rate_min(params[:search][:employment_rate_min])
-    @boroughs = @boroughs.employment_rate_max(params[:search][:employment_rate_max])
+    # @boroughs = @boroughs.employment_rate_min(params[:search][:employment_rate_min])
+    # @boroughs = @boroughs.employment_rate_max(params[:search][:employment_rate_max])
     @top_income = @boroughs.order(gross_income: :desc).first
   end
 
@@ -34,6 +34,18 @@ class BoroughsController < ApplicationController
   def destroy
     @borough.destroy
     redirect_to root_path
+  end
+
+  def bookmark
+    p params
+    @borough = Borough.find(params[:format])
+    @bookmark = Bookmark.new
+    p @bookmark
+    @bookmark.borough = @borough
+    p @bookmark
+    @bookmark.user = current_user
+    p @bookmark
+    @bookmark.save
   end
 
   private

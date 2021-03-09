@@ -20,6 +20,9 @@
           <div class="show-map" style="background-image: url('<%= image_path "COL.png" %>')">
          </div>
      </div>
+     <%= link_to bookmark_path(@borough), method: :post, remote: true do %>
+      click
+     <% end %>
 
 
     </div>
