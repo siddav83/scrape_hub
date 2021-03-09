@@ -28,6 +28,8 @@ CSV.foreach("#{Rails.root}/lib/seeds/borough_data.csv", csv_options) do |row|
   row[:two_year_business_survival_rates] = row[:two_year_business_survival_rates].to_i
   row[:happiness_score_out_of_10] = row[:happiness_score_out_of_10].to_i
   row[:description] = row[:description]
+  row[:latitude] = row[:latitude]
+  row[:longitude] = row[:longitude]
   boroughs << Borough.create(row.to_h)
 end
 
