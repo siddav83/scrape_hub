@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-
 # add user to project
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
