@@ -20,7 +20,7 @@
           <p><%= borough.two_year_business_survival_rates %> %</p>
         </div>
         <div class="data-info-col">
-          <p><b>Number of <%= params[:search][:category] %>'s in area</b></p>
+          <p><b>Number of <%= params[:search][:category] %>s in area</b></p>
           <p><%= @companies.where(borough: borough).count %></p>
         </div>
       </div>
