@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_09_160459) do
+
+ActiveRecord::Schema.define(version: 2021_03_10_144736) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,7 +59,7 @@ ActiveRecord::Schema.define(version: 2021_03_09_160459) do
     t.string "category"
     t.integer "date_of_incoporation"
     t.string "ceo"
-    t.float "number_of_employees"
+    t.integer "number_of_employees"
     t.float "profit"
     t.float "members"
     t.index ["borough_id"], name: "index_companies_on_borough_id"
