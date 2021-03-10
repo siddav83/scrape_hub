@@ -1,8 +1,9 @@
 .show-page {
   color: white;
   margin-top: 100px;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
 }
 
 .show-borough-detail {
@@ -14,8 +15,8 @@
   background-size: auto;
   border-radius: 15px;
   height: 471px;
-  width: 380px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+
 }
 
 .borough-details h4 {
