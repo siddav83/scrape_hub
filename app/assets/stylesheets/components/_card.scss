@@ -36,8 +36,13 @@
   padding: 15px;
   text-align: center;
 }
-.borough-name:hover {
-  opacity: 0.8;
+
+.b-name a {
+  font-size: 15px;
+}
+
+.b-name a:hover {
+  font-size: 18px;
 }
 
 .borough-name a {
@@ -49,6 +54,20 @@
 
 .borough-name h1 {
   font-weight: medium;
+}
+
+.bookmark-index a {
+  color: #FFC65A;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.bookmark-index a:hover {
+  font-size: 21px;
+}
+.bookmark-index i {
+  color: #FFC65A;
+  font-size: 20px;
+  padding-bottom: 5px;
 }
 // #stars_5 {
 //   display: none;
