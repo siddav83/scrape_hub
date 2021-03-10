@@ -6,12 +6,7 @@
           <h3 class="borough-name"><%= @borough.name %></h3>
           <div class="show-borough-info">
             <%= render "shared/card_info", borough: @borough %>
-            <br>
-            <h4>Business Information </h4>
-            <p><%= @borough.description %></p>
-            <br>
-            <h4>Competition Analysis</h4>
-            <p>
+
               <div class="">
                 <%= render "shared/company_analysis", companies: @companies %>
               </div>
