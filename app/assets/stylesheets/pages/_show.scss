@@ -18,19 +18,38 @@
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.borough-details h3, h4 {
+.borough-details h4 {
    text-align: center;
 }
 .borough-details h4 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px
+}
+.bookmark-title a {
+  font-size: 40px;
+  text-decoration: none;
+  padding: 0px 15px 0px 0px;
+  color: #FFC65A;
+}
+.bookmark-title a:hover {
+  font-size: 41px;
+}
+.bookmark-title i {
+  font-size: 40px;
+  text-decoration: none;
+  padding: 0px 15px 0px 0px;
+  color: #FFC65A;
+}
 
+.bookmark-title {
+  display: flex;
+  justify-content: space-between;
 }
 .borough-details h3 {
   font-size: 26px;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  // margin-bottom: 30px;
+  // margin-top: 20px;
   font-size: 28px;
   font-weight: bolder;
 }
