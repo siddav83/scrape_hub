@@ -2,13 +2,16 @@
   margin-top: 100px;
 }
 .data-card {
-  box-shadow: 1px 1px 18px 10px rgb(230, 230, 230);
+  box-shadow: 1px 1px 8px -2px rgb(230, 230, 230);
   background-color: white;
+  border-radius: 5px;
 }
 .data-info {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-bottom: solid 1px rgb(230, 230, 230);
+  padding: 8px;
 }
 .top-ranking {
   box-shadow: 1px 1px 18px 10px rgba(255, 255, 10, 0.1);
@@ -17,15 +20,24 @@
 }
 
 .data-info p {
-  margin: 5px;
+  margin: 2px;
   padding: 5px;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .data-info-col {
   text-align: center;
-  padding: 5px;
+  padding: 8px;
 }
+.data-info-col p {
+  margin: 5px;
+  font-size: 18px;
+}
+
 #star {
   color: #FFC65A;
+  font-size: 25px;
 }
 
 .borough-name {
@@ -38,7 +50,7 @@
 }
 
 .b-name a {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .b-name a:hover {
@@ -68,6 +80,15 @@
   color: #FFC65A;
   font-size: 20px;
   padding-bottom: 5px;
+}
+.results {
+    margin-bottom: 5px;
+    background-color: #41CCB1;
+    background-image: linear-gradient(to bottom right, #41CCB1, #25CAC8);
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px;
+    text-align: left;
 }
 // #stars_5 {
 //   display: none;
