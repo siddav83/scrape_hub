@@ -1,5 +1,8 @@
 <div class="container container-index">
     <div class="card-container">
+      <% if @boroughs.empty? %>
+        <p>You currently have no bookmarks :-(</p>
+      <% end %>
       <% @boroughs.each do |borough| %>
     <div class="data-card <%= 'top-ranking' if borough == @top_income %>">
       <div class="borough-name">
