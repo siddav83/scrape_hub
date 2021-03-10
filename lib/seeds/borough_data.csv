@@ -1,33 +1,44 @@
 ﻿name,population, area,employment_rate,gross_income,average_age ,two_year_business_survival_rates ,happiness_score_out_of_10,description,latitude,longitude
-City of London,8800,290,64.6,60000,43,64,6,"test",51.5155,-0.0922
-Barking and Dagenham,209000,3611,65.8,27886,33,73,7,"test",51.5607,0.1557
-Barnet,389600,8675,68.5,33443,37,74,7,"test",51.6252,-0.1517
-Bexley,244300,6058,75.1,34350,39,74,7,"test",51.4549,0.1505
-Brent,332100,4323,69.5,29812,36,74,7,test,51.5588,-0.2817
-Bromley,327900,15013,75.3,37682,40,79,7,test,51.4039,0.0198
-Camden,242500,2179,69.2,39796,36,74,7,test,51.5290,-0.1255
-Croydon,386500,8650,75.4,32696,37,75,7,test,51.3714,-0.0977
-Ealing,351600,5554,72.7,31331,36,76,7,test,51.5130,-0.3089
-Enfield,333000,8083,73,31603,36,74,7,test,51.6538,-0.0799
-Greenwich,280100,4733,72.1,32415,35,73,7,test,51.4892,0.0648
-Hackney,274300,1905,69,32056,33,77,7,test,51.5450,-0.0553
-Hammersmith and Fulham,185300,1640,77.5,38041,36,73,7,test,51.4927,-0.2339
-Haringey,278000,2960,71.3,31063,35,74,7,test,51.6000,-0.1119
-Harrow,252300,5046,73.9,33202,38,77,7,test,51.5898,-0.3346
-Havering,254300,11235,76.5,33398,40,75,7,test,51.5812,0.1837
-Hillingdon,301000,11570,73.2,33508,36,75,7,test,51.5441,-0.4760
-Hounslow,274200,5598,74.2,31001,36,76,7,test,51.4746,-0.3680
-Islington,231200,1486,72.6,36592,35,73,7,test,51.5416,-0.1022
-Kensington and Chelsea,159000,1212,68.2,40400,39,75,8,test,51.5020,-0.1022
-Kingston upon Thames,175400,3726,74.4,37979,37,77,7,test,51.4085,-0.3064
-Lambeth,328900,2681,78.5,33441,35,64,7,test,51.4607,-0.1163
-Lewisham,303400,3515,75.9,33157,35,73,7,test,51.4452,-0.0209
-Merton,208100,3762,78.8,33989,37,78,7,test,51.4014,-0.1958
-Newham,342900,3620,66.2,27942,32,70,7,test,51.5077,0.0469
-Redbridge,304200,5642,68.3,33483,36,75,7,test,51.5590,0.0741
-Richmond upon Thames,197300,5741,79.6,42076,39,79,7,test,51.4479,-0.3260
-Southwark,314300,2886,74.2,33864,34,73,7,test,51.5035,-0.0804
-Sutton,202600,4385,78.2,32697,39,76,7,test,51.3618,-0.1945
-Tower Hamlets,304000,1978,70.4,36429,31,70,7,test,51.5099,-0.0059
-Waltham Forest,276200,3881,73.1,30859,35,71,7,test,51.5908,-0.0134
-Wandsworth,321000,3426,78.8,41064,35,76,7,test,51.4567,-0.1910
+City of London,8800,290,64.6,60000,43,64,6,"The City of London is a historic financial district, home to both the Stock Exchange and the Bank of England. Modern corporate skyscrapers tower above the vestiges of medieval alleyways below. Affluent workers frequent its smart restaurants and bars. Tourists visit iconic, 17th-century St. Paul’s Cathedral, trace the city’s history at the Museum of London, and take in performances at the huge Barbican arts centre. The City of London, also known as the Square Mile, remains home to the UK’s financial services industry.
+There were 542,000 workers in the City ofLondon, or 10% of London’s total workforce in 2019.
+1 in 57 GB workers were employed in the City. The City generates 5% of England’s business rates.
+This equates to £1.22bn",51.5155,-0.0922
+Barking and Dagenham,209000,3611,65.8,27886,33,73,7,"Barking and Dagenham in East London has excellent connectivity and is the capital’s next big growth opportunity.
+We have established a pioneering new company called Be First to accelerate growth in this borough. Together with our partners we plan to build more than 50,000 new homes and create 20,000 new jobs over the next 20 years.
+Regeneration is focused on a number of key growth hubs, and our borough has four key assets:
+•	affordability - property and land prices in our borough are the lowest in London we have London
+•	availability - more than 400 hectares of development land
+•	connectivity - our fantastic transport links means we are just 15 minutes from the City, from City Airport and from the M25
+•	positivity - we welcome investors who share our ambition to provide opportunities for local people",51.5607,0.1557
+Barnet,389600,8675,68.5,33443,37,74,7,"The London Borough of Barnet is a suburban London borough in North London. The borough was formed in 1965 from parts of the counties of Middlesex and Hertfordshire.
+",51.6252,-0.1517
+Bexley,244300,6058,75.1,34350,39,74,7,"The London Borough of Bexley is a London borough in south-east London, forming part of Outer London. It has a population of 248,287. The main settlements are Sidcup, Erith, Bexleyheath, Crayford, Welling and Old Bexley.",51.4549,0.1505
+Brent,332100,4323,69.5,29812,36,74,7,"The London Borough of Brent is a London borough in north-west London. It borders the boroughs of Harrow to the north-west, Barnet to the north-east, Camden to the east, the City of Westminster to the south-east, as well as the Royal Borough of Kensington and Chelsea, Hammersmith and Fulham and Ealing to the south.",51.5588,-0.2817
+Bromley,327900,15013,75.3,37682,40,79,7,"Bromley is a large town in south-east London, England, located in the historic county of Kent. It is 9.3 miles south-east of Charing Cross, and had a population of 87,889 as of 2011.",51.4039,0.0198
+Camden,242500,2179,69.2,39796,36,74,7,"The London Borough of Camden is a borough in Inner London and, for the purposes of the London Plan has been designated as part of 'Central London'. Camden was historically a part of Middlesex. Camden Town Hall, on Euston Road, lies 1.4 mi north of Charing Cross",51.529,-0.1255
+Croydon,386500,8650,75.4,32696,37,75,7,"Croydon is a large town in south London, England. It is 9.4 miles south of Charing Cross. The principal settlement in the London Borough of Croydon, it is one of the largest commercial districts in Greater London outside Central London, with an extensive shopping district and night-time economy",51.3714,-0.0977
+Ealing,351600,5554,72.7,31331,36,76,7,"The London Borough of Ealing is a London borough in West London. It comprises seven major towns: Acton, Ealing, Greenford, Hanwell, Northolt, Perivale and Southall. With a population of 341,806 inhabitants, it is the fourth most populous London borough.",51.513,-0.3089
+Enfield,333000,8083,73,31603,36,74,7,"The London Borough of Enfield is a London borough in North London. It borders the London boroughs of Barnet to the west, Haringey to the south, and Waltham Forest to the southeast. To the north are the districts of Hertsmere, Welwyn Hatfield and Broxbourne, and to the east Epping Forest.",51.6538,-0.0799
+Greenwich,280100,4733,72.1,32415,35,73,7,"Greenwich is a borough in London, England, on the banks of the River Thames. Known for its maritime history, it's home to the Cutty Sark, a restored 19th-century ship, the huge National Maritime Museum, and the classical buildings of the Old Royal Naval College. The modern O2 arena sits on a peninsula to the north. Overlooking peaceful Greenwich Park, the Royal Observatory is the site of the Greenwich meridian line.",51.4892,0.0648
+Hackney,274300,1905,69,32056,33,77,7,"The London Borough of Hackney is a London borough in Inner London. The historical and administrative heart of Hackney is Mare Street, which lies 5 miles north-east of Charing Cross. The borough is named after Hackney, its principal district.",51.545,-0.0553
+Hammersmith and Fulham,185300,1640,77.5,38041,36,73,7,"The London Borough of Hammersmith and Fulham is a London borough partly in West London and partly in Southwest London; it forms part of Inner London. Traversed by the east–west main roads of the A4 Great West Road and the A40 Westway, many international corporations have offices in the borough.",51.4927,-0.2339
+Haringey,278000,2960,71.3,31063,35,74,7,"The London Borough of Haringey is a London borough in North London, classified by some definitions as part of Inner London, and by others as part of Outer London. It was created in 1965 by the amalgamation of three former boroughs. It shares borders with six other London borough",51.6,-0.1119
+Harrow,252300,5046,73.9,33202,38,77,7,"Harrow is a large town in Greater London, England and serves as the principal settlement of the London Borough of Harrow",51.5898,-0.3346
+Havering,254300,11235,76.5,33398,40,75,7,"The London Borough of Havering in East London, England, forms part of Outer London. It has a population of 259,552 inhabitants; the principal town is Romford, while other communities are Hornchurch, Upminster, Collier Row and Rainham. The borough is mainly suburban, with large areas of protected open space",51.5812,0.1837
+Hillingdon,301000,11570,73.2,33508,36,75,7,"The London Borough of Hillingdon is a large borough in West London, England. It was formed from the districts of Hayes and Harlington, Ruislip-Northwood, Uxbridge, and Yiewsley and West Drayton in the county of Middlesex",51.5441,-0.476
+Hounslow,274200,5598,74.2,31001,36,76,7,"The London Borough of Hounslow is a London borough in West London, England, forming part of Outer London. It was created in 1965 when three smaller Middlesex council areas amalgamated under the London Government Act 1963. It is governed by Hounslow London Borough Council.",51.4746,-0.368
+Islington,231200,1486,72.6,36592,35,73,7,"The London Borough of Islington is a London borough in Inner London. The borough includes a significant area to the south which forms part of central London. Islington has an estimated population of 215,667. It was formed in 1965 by merging the former metropolitan boroughs of Islington and Finsbury",51.5416,-0.1022
+Kensington and Chelsea,159000,1212,68.2,40400,39,75,8,The Royal Borough of Kensington and Chelsea is an Inner London borough with royal status. It is the smallest borough in London and the second smallest district in England; it is one of the most densely populated administrative regions in the United Kingdom. Wikipedia,51.502,-0.1022
+Kingston upon Thames,175400,3726,74.4,37979,37,77,7,"Kingston upon Thames is a town and borough in Greater London, England, formerly within the county of Surrey. It is situated on the River Thames, about 33 feet above sea level and 10 miles southwest of Charing Cross",51.4085,-0.3064
+Lambeth,328900,2681,78.5,33441,35,64,7,"Lambeth is a London borough in South London, England, which forms part of Inner London. Its name was recorded in 1062 as Lambehitha and in 1255 as Lambeth",51.4607,-0.1163
+Lewisham,303400,3515,75.9,33157,35,73,7,"Lewisham is a London borough in South London; it forms part of Inner London. The principal settlement of the borough is Lewisham. The local authority is Lewisham London Borough Council, based in Catford.",51.4452,-0.0209
+Merton,208100,3762,78.8,33989,37,78,7,"The London Borough of Merton is a borough in south-west London, England. The borough was formed under the London Government Act 1963 in 1965 by the merger of the Municipal Borough of Mitcham, the Municipal Borough of Wimbledon and the Merton and Morden Urban District, all formerly within Surrey",51.4014,-0.1958
+Newham,342900,3620,66.2,27942,32,70,7,"The London Borough of Newham is a London borough created in 1965 by the London Government Act 1963. It covers an area previously administered by the Essex county boroughs of West Ham and East Ham, authorities that were both abolished by the same act.",51.5077,0.0469
+Redbridge,304200,5642,68.3,33483,36,75,7,"The London Borough of Redbridge is a London borough in East London, England. It is home to Redbridge Institute of Adult Education and Redbridge Football Club. Its administrative headquarters is at Redbridge Town Hall in Ilford. Wanstead and Woodford are the other principal settlements.",51.559,0.0741
+Richmond upon Thames,197300,5741,79.6,42076,39,79,7,The London Borough of Richmond upon Thames in southwest London forms part of Outer London and is the only London borough on both sides of the River Thames. It was created in 1965 when three smaller council areas amalgamated under the London Government Act 1963.,51.4479,-0.326
+Southwark,314300,2886,74.2,33864,34,73,7,The London Borough of Southwark in south London forms part of Inner London and is connected by bridges across the River Thames to the City of London. It was created in 1965 when three smaller council areas amalgamated under the London Government Act 1963.,51.5035,-0.0804
+Sutton,202600,4385,78.2,32697,39,76,7,"Sutton is the principal town of the eponymous London Borough of Sutton in South London, England. It lies on the lower slopes of the North Downs, and is the administrative headquarters of the Outer London borough.",51.3618,-0.1945
+Tower Hamlets,304000,1978,70.4,36429,31,70,7,"The London Borough of Tower Hamlets is a London borough located in East London; it covers much of the traditional East End. It was formed in 1965 from the merger of the former metropolitan boroughs of Stepney, Poplar and Bethnal Green",51.5099,-0.0059
+Waltham Forest,276200,3881,73.1,30859,35,71,7,"The London Borough of Waltham Forest is a London borough in East London, England. Its population is estimated to be 276,983 in 2019.",51.5908,-0.0134
+Wandsworth,321000,3426,78.8,41064,35,76,7,"Wandsworth is a London borough in southwest London; it forms part of Inner London and has an estimated population of 329,677 inhabitants. Its main settlements are Battersea, Putney, Tooting and Wandsworth Town.",51.4567,-0.191
+Westminster,242100,2149,65.6,42141,38,69,7,"City of Westminster is an inner London city and borough. It has been the capital city, de facto, of multiple British governments. Historically in Middlesex, it is immediately to the west of the older City of London. The city and borough's southern boundary is the Thames",51.49472,-0.135278
