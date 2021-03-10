@@ -41,10 +41,10 @@ ActiveRecord::Schema.define(version: 2021_03_09_160459) do
     t.float "longitude"
   end
 
-  # create_table "categories", force: :cascade do |t|
-  #   t.string "name"
-  #   t.datetime "created_at", precision: 6, null: false
-  #   t.datetime "updated_at", precision: 6, null: false
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "companies", force: :cascade do |t|
