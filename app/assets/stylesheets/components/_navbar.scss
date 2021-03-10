@@ -4,19 +4,23 @@
   justify-content: space-between;
   margin: 0 20px;
   text-decoration: none;
-  color: white;
+  color: black;
   a {
-    color: white;
+    color: black;
   }
   a:hover {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
   }
 }
 
 .top-bar {
-  background-color: transparent;
+  background-color: white;
 }
+
+// .top-bar-transparent {
+//   background-color: transparent;
+// }
 
 
 .navbar-lewagon .navbar-collapse {
@@ -30,11 +34,11 @@
 .logo-background {
   width: 107px;
   height: 54px;
-  border: white 2px solid;
+  border: black 2px solid;
 }
 
 .logo-text {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 40px;
   margin-top: -5px;
@@ -43,7 +47,7 @@
 .navbar_links {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: black;
 }
 
 .log-out-navbar-button {
@@ -53,46 +57,46 @@
   width: 130px;
   font-size: 20px;
   border-radius: 20px;
-  border: white 2px solid;
+  border: black 2px solid;
   &:hover {
-    border: rgba(0, 0, 0, 0.4) 2px solid;
+    border: rgba(0, 0, 0, 0.6) 2px solid;
   }
 }
 
 .log-out-text {
   margin-top: 3px;
   text-decoration: none;
-  color: white;
+  color: black;
   &:hover {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
   }
 }
 
-.top-bar-white {
-  background-color: white;
+.top-bar-transparent {
+  background-color: transparent;
   .logo-text {
-    color: black;
+    color: white;
   }
   .logo-background {
-    border: black 2px solid;
+    border: white 2px solid;
   }
   .log-out-text {
-    color: black;
+    color: white;
   }
   .log-out-text:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
   }
   .log-out-navbar-button {
-    border: black 2px solid;
+    border: white 2px solid;
   }
   .log-out-navbar-button:hover {
-    border: rgba(0, 0, 0, 0.5) 2px solid;
+    border: rgba(0, 0, 0, 0.4) 2px solid;
   }
   a {
-    color: black;
+    color: white;
   }
   a:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.4);
   }
 }

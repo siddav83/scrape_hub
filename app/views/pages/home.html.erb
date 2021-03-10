@@ -1,203 +1,204 @@
-
-<div class="row">
-  <div class="home-main-banner">
-    <div class="container">
-      <div class="home-banner-content">
-        <div class="col-4">
-          <div class="banner-blurb">
-            <h3><strong>Scrape Hub</strong> will give you piece of mind while you build your business</h3>
-            <br>
-            <p>Lorem Ipsum has been used since the time of <strong>Julius Caesar</strong> as placeholder text for websites in development</p>
-            <br>
-            <p>More blah about the company and what we do, doesn’t really matter, it’s just filler. LIke <strong>carrot sticks</strong> or <strong>smooth jazz</strong>.</p>
-          </div>
-        </div>
-        <div class="col-8">
-          <div class="banner-form">
-            <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
-              <div class="d-flex justify-content-between">
-                <%= f.input :category,
-                            label: false,
-                            prompt: "Business Category",
-                            collection: Company.all.pluck(:category).uniq,
-                            input_html: { class: "analysis-input-dropdown-wide" } %>
-              </div>
-              <div class="d-flex justify-content-between">
-                <%= f.input :income_min,
-                            label: false,
-                            prompt: "Minimum income",
-                            collection: [ 20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000,60_000],
-                            input_html: { class: "analysis-input-dropdown" } %>
-                <%= f.input :income_max,
-                            label: false,
-                            prompt: "Maximum income",
-                            collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
-                            input_html: { class: "analysis-input-dropdown"} %>
-              </div>
-              <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="container">
-    <div class="learn-more-prompt">
-      <div class="learn-more-text">
-        <h3>Completely understand your market</h3>
-        <br>
-        <p>Have every detail about the marketplace you are entering right at your fingertips</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="what-we-do-slide">
-    <div class="container">
-      <div class="how-we-do-it-blurb">
-        <div class="">
-          <div class="text-blue-background">
-            <div class="text-box">
-              <h3>What we do:</h3>
+<body class="top-bar-transparent-ident">
+  <div class="row">
+    <div class="home-main-banner">
+      <div class="container">
+        <div class="home-banner-content">
+          <div class="col-4">
+            <div class="banner-blurb">
+              <h3><strong>Scrape Hub</strong> will give you piece of mind while you build your business</h3>
               <br>
-              <p><strong>ScrapeHub</strong> uses powerful data anylis techniques to define the best position for your workplace and</p>
+              <p>Lorem Ipsum has been used since the time of <strong>Julius Caesar</strong> as placeholder text for websites in development</p>
               <br>
               <p>More blah about the company and what we do, doesn’t really matter, it’s just filler. LIke <strong>carrot sticks</strong> or <strong>smooth jazz</strong>.</p>
             </div>
           </div>
-        </div>
-
-        <div class="">
-          <table class="data-comparison-table">
-            <thead>
-              <%# <div class="data-comparison-table-header"> %>
-                <tr class="what-we-do-table">
-                  <th class="table-data-borough">Borough</th>
-                  <th>Mean Income <br> (£k/yr)</th>
-                  <th>Mean Age <br> (yrs)</th>
-                  <th>Average <br> Manliness (in)</th>
-                </tr>
-              <%# </div> %>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="table-data-borough">Xxxxxxxx</td>
-                <td>XX</td>
-                <td>XX</td>
-                <td>X.xx</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Xxxxxxxx</td>
-                <td>XX</td>
-                <td>XX</td>
-                <td>X.xx</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Xxxxxxxx</td>
-                <td>XX</td>
-                <td>XX</td>
-                <td>X.xx</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Xxxxxxxx</td>
-                <td>XX</td>
-                <td>XX</td>
-                <td>X.xx</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Xxxxxxxx</td>
-                <td>XX</td>
-                <td>XX</td>
-                <td>X.xx</td>
-              </tr>
-              <tr>
-                <td class="table-data-borough">Xxxxxxxx</td>
-                <td>XX</td>
-                <td>XX</td>
-                <td>X.xx</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="home-page-light-blue">
-    <div class="container">
-      <div class="what-we-do-display">
-        <div class="col-4">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
-          <br>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="big-footer">
-    <div class="home-page-upper-footer">
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus quasi repellat quo inventore officiis explicabo consectetur, quisquam quos vero deleniti? Rerum eum voluptatem nesciunt atque facere, quia consectetur tempore.</p>
-      </div>
-    </div>
-
-    <div class="home-page-lower-footer">
-      <div class="container">
-        <div class="light-footer-links">
-          <ul>
-            <li class="header">Solutions</li>
-            <li><%= link_to "Data", root_path %></li>
-            <li><%= link_to "Sales", root_path %></li>
-            <li><%= link_to "Developers", root_path %></li>
-          </ul>
-          <ul>
-            <li class="header">Products</li>
-            <li><%= link_to "Advertising", root_path %></li>
-            <li><%= link_to "Alerts", root_path %></li>
-            <li><%= link_to "Connect", root_path %></li>
-          </ul><ul>
-            <li class="header">Information</li>
-            <li><%= link_to "Pricing", root_path %></li>
-            <li><%= link_to "Data Attributes", root_path %></li>
-            <li><%= link_to "Support", root_path %></li>
-            <li><%= link_to "Documentation", root_path %></li>
-            <li><%= link_to "Status", root_path %></li>
-            <li><%= link_to "Comparisons", root_path %></li>
-          </ul><ul>
-            <li class="header">Company</li>
-            <li><%= link_to "About", root_path %></li>
-            <li><%= link_to "Blog", root_path %></li>
-            <li><%= link_to "Careers", root_path %></li>
-            <li><%= link_to "Press", root_path %></li>
-            <li><%= link_to "Twitter", root_path %></li>
-            <li><%= link_to "Facebook", root_path %></li>
-          </ul><ul>
-            <li class="header">Legal</li>
-            <li><%= link_to "Claim", root_path %></li>
-            <li><%= link_to "Privacy", root_path %></li>
-            <li><%= link_to "Terms", root_path %></li>
-          </ul>
-        </div>
-        <div class="footer-logo">
-          <%= link_to "#", class: "navbar-brand" do %>
-            <div class="logo-background">
-              <p class="logo-text">S|H</p>
+          <div class="col-8">
+            <div class="banner-form">
+              <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
+                <div class="d-flex justify-content-between">
+                  <%= f.input :category,
+                              label: false,
+                              prompt: "Business Category",
+                              collection: Company.all.pluck(:category).uniq,
+                              input_html: { class: "analysis-input-dropdown-wide" } %>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <%= f.input :income_min,
+                              label: false,
+                              prompt: "Minimum income",
+                              collection: [ 20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                              input_html: { class: "analysis-input-dropdown" } %>
+                  <%= f.input :income_max,
+                              label: false,
+                              prompt: "Maximum income",
+                              collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                              input_html: { class: "analysis-input-dropdown"} %>
+                </div>
+                <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
+              <% end %>
             </div>
-          <% end %>
-          <div class="copyright-info">
-            <p><i class="far fa-copyright"></i> ScrapeHub 2021</p>
           </div>
         </div>
       </div>
-      <%# <span></span> %>
     </div>
   </div>
-</div>
+
+  <div class="row">
+    <div class="container">
+      <div class="learn-more-prompt">
+        <div class="learn-more-text">
+          <h3>Completely understand your market</h3>
+          <br>
+          <p>Have every detail about the marketplace you are entering right at your fingertips</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="what-we-do-slide">
+      <div class="container">
+        <div class="how-we-do-it-blurb">
+          <div class="">
+            <div class="text-blue-background">
+              <div class="text-box">
+                <h3>What we do:</h3>
+                <br>
+                <p><strong>ScrapeHub</strong> uses powerful data anylis techniques to define the best position for your workplace and</p>
+                <br>
+                <p>More blah about the company and what we do, doesn’t really matter, it’s just filler. LIke <strong>carrot sticks</strong> or <strong>smooth jazz</strong>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <table class="data-comparison-table">
+              <thead>
+                <%# <div class="data-comparison-table-header"> %>
+                  <tr class="what-we-do-table">
+                    <th class="table-data-borough">Borough</th>
+                    <th>Mean Income <br> (£k/yr)</th>
+                    <th>Mean Age <br> (yrs)</th>
+                    <th>Average <br> Manliness (in)</th>
+                  </tr>
+                <%# </div> %>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-data-borough">Xxxxxxxx</td>
+                  <td>XX</td>
+                  <td>XX</td>
+                  <td>X.xx</td>
+                </tr>
+                <tr>
+                  <td class="table-data-borough">Xxxxxxxx</td>
+                  <td>XX</td>
+                  <td>XX</td>
+                  <td>X.xx</td>
+                </tr>
+                <tr>
+                  <td class="table-data-borough">Xxxxxxxx</td>
+                  <td>XX</td>
+                  <td>XX</td>
+                  <td>X.xx</td>
+                </tr>
+                <tr>
+                  <td class="table-data-borough">Xxxxxxxx</td>
+                  <td>XX</td>
+                  <td>XX</td>
+                  <td>X.xx</td>
+                </tr>
+                <tr>
+                  <td class="table-data-borough">Xxxxxxxx</td>
+                  <td>XX</td>
+                  <td>XX</td>
+                  <td>X.xx</td>
+                </tr>
+                <tr>
+                  <td class="table-data-borough">Xxxxxxxx</td>
+                  <td>XX</td>
+                  <td>XX</td>
+                  <td>X.xx</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="home-page-light-blue">
+      <div class="container">
+        <div class="what-we-do-display">
+          <div class="col-4">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="big-footer">
+      <div class="home-page-upper-footer">
+        <div class="container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus quasi repellat quo inventore officiis explicabo consectetur, quisquam quos vero deleniti? Rerum eum voluptatem nesciunt atque facere, quia consectetur tempore.</p>
+        </div>
+      </div>
+
+      <div class="home-page-lower-footer">
+        <div class="container">
+          <div class="light-footer-links">
+            <ul>
+              <li class="header">Solutions</li>
+              <li><%= link_to "Data", root_path %></li>
+              <li><%= link_to "Sales", root_path %></li>
+              <li><%= link_to "Developers", root_path %></li>
+            </ul>
+            <ul>
+              <li class="header">Products</li>
+              <li><%= link_to "Advertising", root_path %></li>
+              <li><%= link_to "Alerts", root_path %></li>
+              <li><%= link_to "Connect", root_path %></li>
+            </ul><ul>
+              <li class="header">Information</li>
+              <li><%= link_to "Pricing", root_path %></li>
+              <li><%= link_to "Data Attributes", root_path %></li>
+              <li><%= link_to "Support", root_path %></li>
+              <li><%= link_to "Documentation", root_path %></li>
+              <li><%= link_to "Status", root_path %></li>
+              <li><%= link_to "Comparisons", root_path %></li>
+            </ul><ul>
+              <li class="header">Company</li>
+              <li><%= link_to "About", root_path %></li>
+              <li><%= link_to "Blog", root_path %></li>
+              <li><%= link_to "Careers", root_path %></li>
+              <li><%= link_to "Press", root_path %></li>
+              <li><%= link_to "Twitter", root_path %></li>
+              <li><%= link_to "Facebook", root_path %></li>
+            </ul><ul>
+              <li class="header">Legal</li>
+              <li><%= link_to "Claim", root_path %></li>
+              <li><%= link_to "Privacy", root_path %></li>
+              <li><%= link_to "Terms", root_path %></li>
+            </ul>
+          </div>
+          <div class="footer-logo">
+            <%= link_to "#", class: "navbar-brand" do %>
+              <div class="logo-background">
+                <p class="logo-text">S|H</p>
+              </div>
+            <% end %>
+            <div class="copyright-info">
+              <p><i class="far fa-copyright"></i> ScrapeHub 2021</p>
+            </div>
+          </div>
+        </div>
+        <%# <span></span> %>
+      </div>
+    </div>
+  </div>  
+</body>
