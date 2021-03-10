@@ -1,5 +1,5 @@
 ﻿Name ,address,borough_id,category,date_of_incoporation,ceo,number_of_employees,turnover ,profit,members
-Virgin Active,Virgin Active Road,1,Gym,1999,Matthew Bucknall,900,564,160,1.2
+Virgin Active,"The Walbrook, Building 97 Cannon St, London EC4N 5AE",1,Gym,1999,Matthew Bucknall,900,564,160,1.2
 Virgin Active,Virgin Active Road,2,Gym,1999,Matthew Bucknall,900,564,160,1.2
 Virgin Active,Virgin Active Road,3,Gym,1999,Matthew Bucknall,900,564,160,1.2
 Virgin Active,Virgin Active Road,4,Gym,1999,Matthew Bucknall,900,564,160,1.2
@@ -31,7 +31,7 @@ Virgin Active,Virgin Active Road,29,Gym,1999,Matthew Bucknall,900,564,160,1.2
 Virgin Active,Virgin Active Road,30,Gym,1999,Matthew Bucknall,900,564,160,1.2
 Virgin Active,Virgin Active Road,31,Gym,1999,Matthew Bucknall,900,564,160,1.2
 Virgin Active,Virgin Active Road,32,Gym,1999,Matthew Bucknall,900,564,160,1.2
-PureGym,PureGym Road,1,Gym,2009,Humphrey Cobbold,800,260,105,1.1
+PureGym,"20 Little Britain, London EC1A 7DH",1,Gym,2009,Humphrey Cobbold,800,260,105,1.1
 PureGym,PureGym Road,2,Gym,2009,Humphrey Cobbold,800,260,105,1.1
 PureGym,PureGym Road,3,Gym,2009,Humphrey Cobbold,800,260,105,1.1
 PureGym,PureGym Road,4,Gym,2009,Humphrey Cobbold,800,260,105,1.1
@@ -63,7 +63,7 @@ PureGym,PureGym Road,29,Gym,2009,Humphrey Cobbold,800,260,105,1.1
 PureGym,PureGym Road,30,Gym,2009,Humphrey Cobbold,800,260,105,1.1
 PureGym,PureGym Road,31,Gym,2009,Humphrey Cobbold,800,260,105,1.1
 PureGym,PureGym Road,32,Gym,2009,Humphrey Cobbold,800,260,105,1.1
-Anytime Fitness,Anytime Fitness Road ,1,Gym,2002,Chuck Runyon,692,421,114,3.3
+Anytime Fitness,"1 Priory Court, Pilgrim St, London EC4V 6DE",1,Gym,2002,Chuck Runyon,692,421,114,3.3
 Anytime Fitness,Anytime Fitness Road ,2,Gym,2002,Chuck Runyon,692,421,114,3.3
 Anytime Fitness,Anytime Fitness Road ,3,Gym,2002,Chuck Runyon,692,421,114,3.3
 Anytime Fitness,Anytime Fitness Road ,4,Gym,2002,Chuck Runyon,692,421,114,3.3
@@ -95,5 +95,9 @@ Anytime Fitness,Anytime Fitness Road ,29,Gym,2002,Chuck Runyon,692,421,114,3.3
 Anytime Fitness,Anytime Fitness Road ,30,Gym,2002,Chuck Runyon,692,421,114,3.3
 Anytime Fitness,Anytime Fitness Road ,31,Gym,2002,Chuck Runyon,692,421,114,3.3
 Anytime Fitness,Anytime Fitness Road ,32,Gym,2002,Chuck Runyon,692,421,114,3.3
-Restaurant  City of london,Restaurant road ,1,restaurant ,1995,sdfsd,10,1,500,
-Restaurant  borough2,,2,restaurant ,2009,dsfljf,4,2,34,
+Restaurant  City of london,Restaurant road ,1,Restaurant ,1995,sdfsd,10,1,500,
+Restaurant  borough2,,2,Restaurant ,2009,dsfljf,4,2,34,
+Hairdresser,,1,Hairdresser,,,,,,
+,,1,Supermarket,,,,,,
+,,1,Phone Repair,,,,,,
+,,1,Pub ,,,,,,
