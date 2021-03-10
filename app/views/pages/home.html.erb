@@ -5,15 +5,17 @@
         <div class="home-banner-content">
           <div class="col-4">
             <div class="banner-blurb">
+              <br>
+              <br>
+              <br>
+              <br>
               <h3><strong>Scrape Hub</strong> will give you piece of mind while you build your business</h3>
               <br>
-              <p>Lorem Ipsum has been used since the time of <strong>Julius Caesar</strong> as placeholder text for websites in development</p>
-              <br>
-              <p>More blah about the company and what we do, doesn’t really matter, it’s just filler. LIke <strong>carrot sticks</strong> or <strong>smooth jazz</strong>.</p>
             </div>
           </div>
           <div class="col-8">
             <div class="banner-form">
+              <h4> Choose your business </h4>
               <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
                 <div class="d-flex justify-content-between">
                   <%= f.input :category,
@@ -22,6 +24,7 @@
                               collection: Company.all.pluck(:category).uniq,
                               input_html: { class: "analysis-input-dropdown-wide" } %>
                 </div>
+                <h4> Choose your customer target </h4>
                 <div class="d-flex justify-content-between">
                   <%= f.input :income_min,
                               label: false,
@@ -200,5 +203,5 @@
         <%# <span></span> %>
       </div>
     </div>
-  </div>  
+  </div>
 </body>
