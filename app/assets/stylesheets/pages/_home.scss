@@ -161,22 +161,14 @@ body {
   z-index: 10;
 }
 
-thead {
-  background-color: #41CCB1;
+.data-comparison-table thead {
+  background-color: #c4c4c4;
 }
 
-thead th {
+.data-comparison-table thead th {
   width: 22%;
 }
 
-thead th:nth-child(1) {
-  width: 34%;
-  border-radius: 15px 0 0 0;
-}
-
-thead th:nth-child(4) {
-  border-radius: 0 15px 0 0;
-}
 
 .big-footer {
   color: white;
