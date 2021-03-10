@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_09_160459) do
+ActiveRecord::Schema.define(version: 2021_03_10_112532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,10 +41,10 @@ ActiveRecord::Schema.define(version: 2021_03_09_160459) do
     t.float "longitude"
   end
 
-  # create_table "categories", force: :cascade do |t|
-  #   t.string "name"
-  #   t.datetime "created_at", precision: 6, null: false
-  #   t.datetime "updated_at", precision: 6, null: false
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "companies", force: :cascade do |t|
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2021_03_09_160459) do
     t.string "category"
     t.integer "date_of_incoporation"
     t.string "ceo"
-    t.float "number_of_employees"
+    t.integer "number_of_employees"
     t.float "profit"
     t.float "members"
     t.index ["borough_id"], name: "index_companies_on_borough_id"
