@@ -13,10 +13,13 @@
   border-bottom: solid 1px rgb(230, 230, 230);
   padding: 8px;
 }
+
 .top-ranking {
-  box-shadow: 1px 1px 18px 10px rgba(255, 255, 10, 0.1);
-  border: solid 3px #41CCB1;
+  border: solid 3px #FFC65A;
   border-radius: 8px;
+  .borough-name {
+    background: #FFC65A
+  }
 }
 
 .data-info p {
@@ -26,10 +29,12 @@
   margin-right: 10px;
   margin-left: 10px;
 }
+
 .data-info-col {
   text-align: center;
   padding: 8px;
 }
+
 .data-info-col p {
   margin: 5px;
   font-size: 18px;
@@ -89,6 +94,7 @@
     border-radius: 5px 5px 5px 5px;
     padding: 15px;
     text-align: left;
+    font-size: 20px;
 }
 // #stars_5 {
 //   display: none;

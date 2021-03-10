@@ -71,6 +71,41 @@
 .form-label {
   padding-left: 20px;
 }
+// Company Analysis scss
+
+.analysis-table {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+  background-color: #41CCB1;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.company-name th {
+  padding: 5px 10px 5px 10px;
+
+}
+.company-name th:nth-child(1) {
+  border-radius: 5px 0px 0px 0px;
+}
+.company-name th:nth-child(5) {
+  border-radius: 0px 5px 0px 0px;
+}
+
+.analysis-borough {
+  font-weight: bolder;
+  width: 250px;
+}
+.analysis-borough {
+  padding-left: 10px;
+}
 
 
+.analysis-data {
+  padding: 10px;
+}
+.prime-head {
+  color: white;
+}
 
