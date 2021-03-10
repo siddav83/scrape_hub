@@ -3,7 +3,18 @@
       <% @boroughs.each do |borough| %>
     <div class="data-card <%= 'top-ranking' if borough == @top_income %>">
       <div class="borough-name">
-        <a> <%= link_to borough.name, borough_path(borough, category: params[:search][:category]) %></a>
+        <div class="b-name">
+         <a> <%= link_to borough.name, borough_path(borough, category: params[:search][:category]) %></a>
+        </div>
+        <div class="bookmark-index">
+          <% if @bookmark.nil? %>
+          <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
+            <i class="far fa-bookmark"></i>
+          <% end %>
+          <% else %>
+            <i class="fas fa-bookmark"></i>
+          <% end %>
+        </div>
       </div>
         <div class="data-info">
           <p id="star"> ★ <%= (borough.happiness_score_out_of_10 / 2.to_f) %> </p><p> <b>Population</b> <%= borough.population %> </p>
