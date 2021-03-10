@@ -1,13 +1,10 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "show";
+@import "borough_index";
 
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
-
-// .top-bar {
-//   background-color: #41CCB1;
-// }
