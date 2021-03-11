@@ -11,7 +11,7 @@ class BoroughsController < ApplicationController
 
   def show
     #@companies = @borough.companies
-    @bookmark = Bookmark.find_by(borough: @borough)
+    @bookmark = Bookmark.where(user: current_user).find_by(borough: @borough)
     @companies = @borough.companies.where(category: params[:category].capitalize)
     @markers = { lat: @borough.latitude.to_s, lng: @borough.longitude.to_s }
   end

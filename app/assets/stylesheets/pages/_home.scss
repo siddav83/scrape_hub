@@ -167,12 +167,28 @@ abbr {
   border-radius: 15px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
+  thead {
+    background-color: #c4c4c4;
+  }
+  
+  thead th {
+    width: 22%;
+  }
+  
+  thead th:nth-child(1) {
+    width: 34%;
+    border-radius: 15px 0 0 0;
+  }
+  thead th:nth-child(4) {
+    border-radius: 0 15px 0 0;
+  }
 }
 
-.data-comparison-table thead {
-  background-color: #c4c4c4;
-}
+// .data-comparison-table thead {
+//   background-color: #c4c4c4;
+// }
 
-.data-comparison-table thead th {
-  width: 22%;
-}
+// .data-comparison-table thead th {
+//   width: 22%;
+// }
+

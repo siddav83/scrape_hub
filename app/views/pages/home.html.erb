@@ -19,7 +19,7 @@
               <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
                 <div class="d-flex justify-content-between">
                   <%= f.input :category,
-                              label: "Select your target business category",
+                              label: false,
                               prompt: "Select Business Category",
                               collection: Company.all.pluck(:category).uniq,
                               input_html: { class: "analysis-input-dropdown-wide" },
@@ -28,14 +28,14 @@
                 <h4> Choose your customer target </h4>
                 <div class="d-flex justify-content-between">
                   <%= f.input :income_min,
-                              label: "Select your target income bracket (minimum)",
+                              label: false,
                               prompt: "Select Minimum Income",
                               collection: [ 20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
                               input_html: { class: "analysis-input-dropdown" },
                               required: true %>
                   <%= f.input :income_max,
-                              label: "Select your target income bracket (minimum)",
-                              prompt: "Select Mximum Income",
+                              label: false,
+                              prompt: "Select Maximum Income",
                               collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
                               input_html: { class: "analysis-input-dropdown" },
                               required: true, display: :none %>
