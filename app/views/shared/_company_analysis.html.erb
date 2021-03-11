@@ -25,25 +25,25 @@
     <tr>
       <td class="analysis-borough">Number of Employees 2019</td>
       <% companies.each do |company| %>
-      <td class="analysis-data"><%= company.number_of_employees %></td>
+      <td class="analysis-data"><%= company.number_of_employees %>k</td>
       <% end %>
     </tr>
     <tr>
       <td class="analysis-borough">Turnover 2019</td>
       <% companies.each do |company| %>
-      <td class="analysis-data"><%= company.turnover %></td>
+      <td class="analysis-data"><%= company.turnover %>m</td>
       <% end %>
     </tr>
     <tr>
       <td class="analysis-borough">Profit 2019</td>
       <% companies.each do |company| %>
-      <td class="analysis-data"><%= company.profit %></td>
+      <td class="analysis-data"><%= company.profit %>m</td>
       <% end %>
     </tr>
     <tr>
       <td class="analysis-borough">Members</td>
       <% companies.each do |company| %>
-      <td class="analysis-data"><%= company.members %></td>
+      <td class="analysis-data"><%= company.members %>m</td>
       <% end %>
     </tr>
   </tbody>
