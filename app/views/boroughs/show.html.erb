@@ -1,27 +1,43 @@
-<!-- nav bar is row -->
-<div class="row">
-  <div class="home-main-banner">
-    <div class="container">
-      <div class="show-page">
-        <div class="borough-details">
-          <div class="bookmark-title">
-            <h3 class="borough-name"><%= @borough.name %> </h3>
-            <div>
-              <% if @bookmark.nil? %>
-              <%= link_to bookmark_path(@borough,category: params[:category]), method: :post do %>
-                <i class="far fa-bookmark"></i>
-              <% end %>
-              <% else %>
-                <i class="fas fa-bookmark"></i>
-              <% end %>
 
+<% content_for :for_head do %>
+  <title>ScrapeHub | Data for <%= @borough.name %></title>
+<% end %>
+<body class="top-bar-transparent-ident">
+  <div class="row">
+    <div class="home-main-banner">
+      <div class="container">
+        <div class="show-page">
+          <div class="borough-details">
+            <div class="bookmark-title">
+              <h3 class="borough-name"><%= @borough.name %> </h3>
+              <div>
+                <% if @bookmark.nil? %>
+                <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
+                  <i class="far fa-bookmark"></i>
+                <% end %>
+                <% else %>
+                  <i class="fas fa-bookmark"></i>
+                <% end %>
+
+              </div>
+            </div>
+
+            <div class="show-borough-info">
+              <%= render "shared/card_info", borough: @borough %>
+            </div>
+
+          </div>
+
+          <div class="show-map">
+            <!-- <div class="show-map" style="background-image: url('<%= image_path "COL.png" %>')"></div> -->
+            <div id="map"
+                style="height: 470px; min-width: 371px; border-radius: 15px;"
+                data-markers="<%= @markers.to_json %>"
+                data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
             </div>
           </div>
-          <div class="show-borough-info">
-            <%= render "shared/card_info", borough: @borough %>
-
-          </div>
         </div>
+
         <div class="show-map">
           <div id="map"
               style="height: 470px; min-width: 371px; border-radius: 15px;"
@@ -31,17 +47,19 @@
 
       </div>
       <br>
+
         <h4>Business Information </h4>
         <p><%= @borough.description %></p>
-      <br>
+        <br>
         <h4>Competition Analysis</h4>
-      <p>
-        <div class="">
-        <%= render "shared/company_analysis", companies: @companies %>
+        <p>
+          <div class="">
+            <%= render "shared/company_analysis", companies: @companies %>
+          </div>
+        </p>
+
+
       </div>
-      </p>
-
-
     </div>
   </div>
 </body>

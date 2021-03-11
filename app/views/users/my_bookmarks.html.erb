@@ -1,3 +1,7 @@
+<% content_for :for_head do %>
+  <title>ScrapeHub | My Bookmarks</title>
+<% end %>
+
 <div class="container container-index">
     <div class="card-container">
       <% if @boroughs.empty? %>
@@ -23,8 +27,8 @@
           <p><%= borough.two_year_business_survival_rates %> %</p>
         </div>
         <div class="data-info-col">
-          <p><b>Number of Companies in area</b></p>
-          <p><%= Company.where(borough: borough).count %></p>
+          <p><b>Number of <%= borough.bookmarks.select{|bookmark|bookmark.user.id == current_user.id}.first.category %>s in area</b></p>
+          <p><%= Company.where(category: borough.bookmarks.select{|bookmark|bookmark.user.id == current_user.id}.first.category).where(borough: borough).count %></p>
         </div>
       </div>
     <% end %>

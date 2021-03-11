@@ -1,8 +1,7 @@
 <head>
-  <% if content_for? :for_head %>
-    <%= yield :for_head %>
+  <% content_for :for_head do %>
+    <title>ScrapeHub | 422 | Unauthorised Access</title>
   <% end %>
-  <title>ScrapeHub | 422</title>
 </head>
 
 <div class="error-container">
