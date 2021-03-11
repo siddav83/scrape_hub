@@ -7,6 +7,12 @@ $analyse-text-dark-blue: #2B4770;
 $dark-footer-blue: #101C2C;
 $light-footer-blue: #192A42;
 
+.home-main-banner-show {
+  height: 630px;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
+}
+
 .show-page {
   color: white;
   margin-top: 100px;
@@ -120,6 +126,10 @@ $light-footer-blue: #192A42;
 
 // Company Analysis scss
 
+.comp-data {
+  margin: 16px 0;
+}
+
 .analysis-table {
   border-radius: 15px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
@@ -131,6 +141,7 @@ $light-footer-blue: #192A42;
 
 .company-name {
   background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
+  // vertical-align: top;
 }
 
 .company-name th {
@@ -142,7 +153,7 @@ $light-footer-blue: #192A42;
   border-radius: 15px 0px 0px 0px;
 }
 
-.company-name th:nth-child(7) {
+.company-name th:nth-child(8) {
   border-radius: 0px 15px 0px 0px;
 }
 

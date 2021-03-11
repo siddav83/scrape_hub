@@ -4,7 +4,7 @@
 <% end %>
 <body class="top-bar-transparent-ident">
   <div class="row">
-    <div class="home-main-banner">
+    <div class="home-main-banner-show">
       <div class="container">
         <div class="show-page">
           <div class="borough-details">
@@ -43,7 +43,7 @@
   <div class="row">
     <div class="container">
       <div class="business-information">
-        <h4>BUSINESS INFORMATION</h4>
+        <h4>BUSINESS INFORMATION - The <%= @borough.name %></h4>
         <p><%= @borough.description %></p>
       </div>
     </div>
@@ -52,7 +52,7 @@
   <div class="row">
     <div class="container">
       <div class="business-information">
-        <h4>COMPETITION ANALYSIS</h4>
+        <h4>COMPETITION ANALYSIS - <%= params[:category] %>s in The <%= @borough.name %></h4>
         <div class="comp-data">
           <%= render "shared/company_analysis_2", companies: @companies %>
         </div>
@@ -61,8 +61,11 @@
   </div>
   <div class="row">
     <div class="container">
-      <div class="boroughs-map">
-        <div class="flourish-embed flourish-map" data-src="visualisation/5530599"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      <div class="business-information">
+        <h4>BOROUGHS</h4>
+        <div class="boroughs-map">
+          <div class="flourish-embed flourish-map" data-src="visualisation/5530599"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
       </div>
     </div>
   </div>
