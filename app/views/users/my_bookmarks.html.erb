@@ -3,10 +3,19 @@
 <% end %>
 
 <div class="container container-index">
-    <div class="card-container">
+
       <% if @boroughs.empty? %>
-        <p>You currently have no bookmarks :-(</p>
+      <div class="empty-bookmark">
+      <br>
+      <br>
+      <p><i class="fas fa-arrow-alt-circle-right"></i> This page will give you access to you search once you save them <i class="fas fa-archive"></i></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      </div>
       <% end %>
+<div class="card-container">
       <% @boroughs.each do |borough| %>
     <div class="data-card <%= 'top-ranking' if borough == @top_income %>">
       <div class="borough-name">
