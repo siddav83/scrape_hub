@@ -3,12 +3,13 @@
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 16px;
-}
-
-.show-borough-detail {
+  // grid-column-gap: 16px;
   align-items: center;
 }
+
+// .show-borough-detail {
+//   align-items: center;
+// }
 
 .show-map {
   background-position: center;
@@ -19,23 +20,39 @@
 
 }
 
-.borough-details h4 {
-   text-align: center;
+.borough-details {
+  color: $text-blue;
+  background-color: $background-blue;
+  border-radius: 10px 0 0 10px;
+  height: 391px;
+  width: 100%;
+  // display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
+
+.borough-details h4 {
+  text-align: center;
+}
+
 .borough-details h4 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px
 }
+
 .bookmark-title a {
   font-size: 40px;
   text-decoration: none;
   padding: 0px 15px 0px 0px;
   color: #FFC65A;
 }
+
 .bookmark-title a:hover {
   font-size: 41px;
 }
+
 .bookmark-title i {
   font-size: 40px;
   text-decoration: none;
@@ -47,6 +64,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .borough-details h3 {
   font-size: 26px;
   // margin-bottom: 30px;
@@ -54,6 +72,7 @@
   font-size: 28px;
   font-weight: bolder;
 }
+
 .borough-details p {
   font-size: 14px;
 }
