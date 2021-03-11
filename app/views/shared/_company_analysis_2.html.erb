@@ -1,0 +1,26 @@
+<table class="analysis-table">
+  <thead>
+    <tr class="company-name">
+      <th class="analysis-borough">Year of<br>Incorporation</th>
+      <th class="analysis-borough">CEO</th>
+      <th class="analysis-borough">Number of<br>Employees (2019)</th>
+      <th class="analysis-borough">Turnover<br>(2019)</th>
+      <th class="analysis-borough">Profit<br>(2019)</th>
+      <th class="analysis-borough">Margin<br>(2019)</th>
+      <th class="analysis-borough">Members</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% companies.each do |company| %>
+      <tr>
+        <td class="analysis-data"><%= company.date_of_incoporation %></td>
+        <td class="analysis-data"><%= company.ceo %></td>
+        <td class="analysis-data"><%= company.number_of_employees %>k</td>
+        <td class="analysis-data"><%= company.turnover %>m</td>
+        <td class="analysis-data"><%= company.profit %>m</td>
+        <td class="analysis-data"><%= ((company.profit / company.turnover)*100).ceil %>%</td>
+        <td class="analysis-data"><%= company.members %>m</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

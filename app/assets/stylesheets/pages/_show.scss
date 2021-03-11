@@ -123,6 +123,10 @@ $light-footer-blue: #192A42;
 .analysis-table {
   border-radius: 15px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  color: $text-blue;
+  thead {
+    background-color: #c4c4c4;
+  }
 }
 
 .company-name {
@@ -138,7 +142,7 @@ $light-footer-blue: #192A42;
   border-radius: 15px 0px 0px 0px;
 }
 
-.company-name th:nth-child(5) {
+.company-name th:nth-child(7) {
   border-radius: 0px 15px 0px 0px;
 }
 
@@ -157,11 +161,17 @@ $light-footer-blue: #192A42;
 .prime-head {
   color: white;
 }
-.comp-data {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
-}
+// .comp-data {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-gap: 8px;
+// }
 .bname-show {
   border-radius: 0px;
+}
+
+.boroughs-map {
+  height: 470;
+  width: 371;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
