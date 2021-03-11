@@ -1,50 +1,50 @@
 <table class="analysis-table">
-            <thead>
-              <tr class="company-name">
-                <th class="analysis-borough prime-head">Data Types</th>
-                <% companies.each do |company| %>
-                <th><%= company.name %><br></th>
-                <% end %>
+  <thead>
+    <tr class="company-name">
+      <th class="analysis-borough prime-head">Data Types</th>
+      <% companies.each do |company| %>
+      <th><%= company.name %><br></th>
+      <% end %>
 
-                <th><br></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="analysis-borough">Date of Incorporation</td>
-                <% companies.each do |company| %>
-                <td class="analysis-data"><%= company.date_of_incoporation %></td>
-                <% end %>
-              </tr>
-              <tr>
-                <td class="analysis-borough">CEO</td>
-                <% companies.each do |company| %>
-                <td class="analysis-data"><%= company.ceo %></td>
-                <% end %>
-              </tr>
-              <tr>
-                <td class="analysis-borough">Number of Employees 2019</td>
-                <% companies.each do |company| %>
-                <td class="analysis-data"><%= company.number_of_employees %></td>
-                <% end %>
-              </tr>
-              <tr>
-                <td class="analysis-borough">Turnover 2019</td>
-                <% companies.each do |company| %>
-                <td class="analysis-data"><%= company.turnover %></td>
-                <% end %>
-              </tr>
-              <tr>
-                <td class="analysis-borough">Profit 2019</td>
-                <% companies.each do |company| %>
-                <td class="analysis-data"><%= company.profit %></td>
-                <% end %>
-              </tr>
-              <tr>
-                <td class="analysis-borough">Members</td>
-                <% companies.each do |company| %>
-                <td class="analysis-data"><%= company.members %></td>
-                <% end %>
-              </tr>
-            </tbody>
-          </table>
+      <th><br></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="analysis-borough">Date of Incorporation</td>
+      <% companies.each do |company| %>
+      <td class="analysis-data"><%= company.date_of_incoporation %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <td class="analysis-borough">CEO</td>
+      <% companies.each do |company| %>
+      <td class="analysis-data"><%= company.ceo %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <td class="analysis-borough">Number of Employees 2019</td>
+      <% companies.each do |company| %>
+      <td class="analysis-data"><%= company.number_of_employees %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <td class="analysis-borough">Turnover 2019</td>
+      <% companies.each do |company| %>
+      <td class="analysis-data"><%= company.turnover %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <td class="analysis-borough">Profit 2019</td>
+      <% companies.each do |company| %>
+      <td class="analysis-data"><%= company.profit %></td>
+      <% end %>
+    </tr>
+    <tr>
+      <td class="analysis-borough">Members</td>
+      <% companies.each do |company| %>
+      <td class="analysis-data"><%= company.members %></td>
+      <% end %>
+    </tr>
+  </tbody>
+</table>

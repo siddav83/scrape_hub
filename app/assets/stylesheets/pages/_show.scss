@@ -1,3 +1,12 @@
+$banner-turquoise: #41CCB1;
+$banner-blue: #25CAC8;
+$text-blue: #2A456D;
+$background-blue: #F6F9FC;
+$analyse-text-light-blue: #3A619B;
+$analyse-text-dark-blue: #2B4770;
+$dark-footer-blue: #101C2C;
+$light-footer-blue: #192A42;
+
 .show-page {
   color: white;
   margin-top: 100px;
@@ -32,6 +41,13 @@
   z-index: 1;
 }
 
+.borough-name-show {
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  padding: 15px;
+  text-align: center;
+}
+
 .borough-details h4 {
   text-align: center;
 }
@@ -63,6 +79,10 @@
 .bookmark-title {
   display: flex;
   justify-content: space-between;
+  background-color: transparent;
+  h3 {
+    color: $text-blue;
+  }
 }
 
 .borough-details h3 {
@@ -90,26 +110,36 @@
 .form-label {
   padding-left: 20px;
 }
+
+// BUSINESS INFORMATION SCSS
+
+.business-information {
+  margin: 50px 0;
+  color: $text-blue;
+}
+
 // Company Analysis scss
 
 .analysis-table {
+  border-radius: 15px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .company-name {
-  background-color: #41CCB1;
-  border-radius: 5px 5px 0px 0px;
+  background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
 }
 
 .company-name th {
+  color: white;
   padding: 5px 10px 5px 10px;
+}
 
-}
 .company-name th:nth-child(1) {
-  border-radius: 5px 0px 0px 0px;
+  border-radius: 15px 0px 0px 0px;
 }
+
 .company-name th:nth-child(5) {
-  border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 15px 0px 0px;
 }
 
 .analysis-borough {

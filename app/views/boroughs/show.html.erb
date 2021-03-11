@@ -9,7 +9,7 @@
         <div class="show-page">
           <div class="borough-details">
             <div class="bookmark-title">
-              <h3 class="borough-name bname-show"><%= @borough.name %> </h3>
+              <h3 class="borough-name-show bname-show"><%= @borough.name %> </h3>
               <div>
                 <% if @bookmark.nil? %>
                 <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
@@ -37,30 +37,27 @@
           </div>
         </div>
       </div>
-      <div>
-        <h4>Business Information </h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container">
+      <div class="business-information">
+        <h4>BUSINESS INFORMATION</h4>
         <p><%= @borough.description %></p>
-        <br>
-        <h4>Competition Analysis</h4>
-        <p>
-          <div class="">
-            <%= render "shared/company_analysis", companies: @companies %>
-          </div>
-        </p>
       </div>
     </div>
   </div>
+
   <div class="row">
     <div class="container">
-      <br>
-        <h4>BUSINESS INFORMATION</h4>
-        <p><%= @borough.description %></p>
-      <br>
+      <div class="business-information">
         <h4>COMPETITION ANALYSIS</h4>
-      <div class="comp-data">
-        <%= render "shared/company_analysis", companies: @companies %>
-        <div class="flourish-embed flourish-map" data-src="visualisation/5530599"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-      </div>
+        <div class="comp-data">
+          <%= render "shared/company_analysis", companies: @companies %>
+          <div class="flourish-embed flourish-map" data-src="visualisation/5530599"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
      </div>
+    </div>
   </div>
 </body>
