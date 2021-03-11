@@ -39,17 +39,25 @@
       </div>
     </div>
   </div>
+
   <div class="row">
     <div class="container">
-      <br>
+      <div class="business-information">
         <h4>BUSINESS INFORMATION</h4>
         <p><%= @borough.description %></p>
-      <br>
-        <h4>COMPETITION ANALYSIS</h4>
-      <div class="comp-data">
-        <%= render "shared/company_analysis", companies: @companies %>
-        <div class="flourish-embed flourish-map" data-src="visualisation/5530599"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container">
+      <div class="business-information">
+        <h4>COMPETITION ANALYSIS</h4>
+        <div class="comp-data">
+          <%= render "shared/company_analysis", companies: @companies %>
+          <div class="flourish-embed flourish-map" data-src="visualisation/5530599"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
      </div>
+    </div>
   </div>
 </body>
