@@ -36,16 +36,8 @@
             </div>
           </div>
         </div>
-        <div class="show-map">
-          <div id="map"
-              style="height: 470px; min-width: 371px; border-radius: 15px;"
-              data-markers="<%= @markers.to_json %>"
-              data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
-        </div>
-
       </div>
-      <br>
-
+      <div>
         <h4>Business Information </h4>
         <p><%= @borough.description %></p>
         <br>
