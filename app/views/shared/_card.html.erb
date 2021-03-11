@@ -11,8 +11,8 @@
          <a> <%= link_to borough.name, borough_path(borough, category: params[:search][:category]) %></a>
         </div>
         <div class="bookmark-index">
-          <% if @bookmark.nil? %>
-          <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
+          <% if !borough.bookmarks.where(user: current_user).any? %>
+          <%= link_to bookmark_path(borough,category: params[:category]), method: :post do %>
             <i class="far fa-bookmark"></i>
           <% end %>
           <% else %>
