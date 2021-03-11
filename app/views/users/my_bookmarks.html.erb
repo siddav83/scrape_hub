@@ -37,7 +37,7 @@
         </div>
         <div class="data-info-col">
           <p><b>Number of <%= borough.bookmarks.select{|bookmark|bookmark.user.id == current_user.id}.first.category %>s in area</b></p>
-          <p><%= Company.where(category: borough.bookmarks.select{|bookmark|bookmark.user.id == current_user.id}.first.category).where(borough: borough).count %></p>
+          <p><%= (Company.where(category: borough.bookmarks.select{|bookmark|bookmark.user.id == current_user.id}.first.category).where(borough: borough).count)*6 %></p>
         </div>
       </div>
     <% end %>

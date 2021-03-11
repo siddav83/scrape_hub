@@ -44,7 +44,7 @@
         </div>
         <div class="data-info-col">
           <p><b>Number of <%= params[:search][:category] %>s in area</b></p>
-          <p><%= @companies.where(borough: borough).count %></p>
+          <p><%= (@companies.where(borough: borough).count)*6 %></p>
         </div>
       </div>
     <% end %>
