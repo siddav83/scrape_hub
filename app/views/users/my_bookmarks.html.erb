@@ -18,8 +18,9 @@
 <div class="card-container">
       <% @boroughs.each do |borough| %>
     <div class="data-card <%= 'top-ranking' if borough == @top_income %>">
-      <div class="borough-name">
+      <div class="borough-name d-flex justify-content-between">
         <a> <%= link_to borough.name, borough_path(borough, category: current_user.bookmarks.where(borough: borough).first.category) %></a>
+        <div class="del-icon"><%= link_to "✖︎", delete_bookmark_path(borough.bookmarks.select{|bookmark|bookmark.user.id == current_user.id}), method: :delete %></div>
       </div>
         <div class="data-info">
           <p class="star">

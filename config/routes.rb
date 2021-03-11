@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/500', to: "errors#internal_error"
   post 'bookmark', to: 'boroughs#bookmark'
   get 'users/:id/mybookmarks', to: 'users#my_bookmarks', as: 'my_bookmarks'
+  delete "bookmarks/:id", to: 'users#delete_bookmark', as: 'delete_bookmark'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 end
