@@ -32,6 +32,13 @@
   z-index: 1;
 }
 
+.borough-name-show {
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  padding: 15px;
+  text-align: center;
+}
+
 .borough-details h4 {
   text-align: center;
 }
@@ -63,6 +70,10 @@
 .bookmark-title {
   display: flex;
   justify-content: space-between;
+  background-color: transparent;
+  h3 {
+    color: $text-blue;
+  }
 }
 
 .borough-details h3 {

@@ -9,7 +9,7 @@
         <div class="show-page">
           <div class="borough-details">
             <div class="bookmark-title">
-              <h3 class="borough-name bname-show"><%= @borough.name %> </h3>
+              <h3 class="borough-name-show bname-show"><%= @borough.name %> </h3>
               <div>
                 <% if @bookmark.nil? %>
                 <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
@@ -36,17 +36,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <h4>Business Information </h4>
-        <p><%= @borough.description %></p>
-        <br>
-        <h4>Competition Analysis</h4>
-        <p>
-          <div class="">
-            <%= render "shared/company_analysis", companies: @companies %>
-          </div>
-        </p>
       </div>
     </div>
   </div>

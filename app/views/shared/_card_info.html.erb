@@ -1,7 +1,15 @@
 <div class="data-info" >
   </div>
   <div class="data-info">
-    <p id="star"> ★ <%= (borough.happiness_score_out_of_10 / 2.to_f) %> </p><p> <b>Population</b> <%= borough.population %> </p>
+    <p class="star">
+      <% (borough.happiness_score_out_of_10 / 2).times do %>
+        <i class="fas fa-star"></i>
+      <% end %>
+      <% if borough.happiness_score_out_of_10.odd? %>
+        <i class="fas fa-star-half"></i>
+      <% end %>
+    </p>
+    <p class="padding-pop" > <b>Population</b> <%= borough.population %> </p>
   </div>
   <div class="data-info">
     <p><b>Average Age</b></p><p><%= borough.average_age %> - Years Old </p>
