@@ -19,23 +19,26 @@
               <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
                 <div class="d-flex justify-content-between">
                   <%= f.input :category,
-                              label: false,
-                              prompt: "Business Category",
+                              label: "Select your target business category",
+                              prompt: "Select Business Category",
                               collection: Company.all.pluck(:category).uniq,
-                              input_html: { class: "analysis-input-dropdown-wide" } %>
+                              input_html: { class: "analysis-input-dropdown-wide" },
+                              required: true %>
                 </div>
                 <h4> Choose your customer target </h4>
                 <div class="d-flex justify-content-between">
                   <%= f.input :income_min,
-                              label: false,
-                              prompt: "Minimum income",
+                              label: "Select your target income bracket (minimum)",
+                              prompt: "Select Minimum Income",
                               collection: [ 20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
-                              input_html: { class: "analysis-input-dropdown" } %>
+                              input_html: { class: "analysis-input-dropdown" },
+                              required: true %>
                   <%= f.input :income_max,
-                              label: false,
-                              prompt: "Maximum income",
+                              label: "Select your target income bracket (minimum)",
+                              prompt: "Select Mximum Income",
                               collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
-                              input_html: { class: "analysis-input-dropdown"} %>
+                              input_html: { class: "analysis-input-dropdown" },
+                              required: true, display: :none %>
                 </div>
                 <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
               <% end %>
@@ -67,9 +70,8 @@
               <div class="text-box">
                 <h3>What we do:</h3>
                 <br>
-                <p><strong>ScrapeHub</strong> uses powerful data anylis techniques to define the best position for your workplace and</p>
-                <br>
-                <p>More blah about the company and what we do, doesn’t really matter, it’s just filler. LIke <strong>carrot sticks</strong> or <strong>smooth jazz</strong>.</p>
+                <p><strong>ScrapeHub</strong> uses powerful data anylisis techniques like <strong>deep learning algorithms</strong> and <strong>neural nets</strong> to define the best position for your workplace.</p>
+                <p>Our understanding of markets and the data that deine them is unmatched.</p>
               </div>
             </div>
           </div>

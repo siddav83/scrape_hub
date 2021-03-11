@@ -13,7 +13,7 @@ body {
 
 
 .home-main-banner {
-  height: 740px;
+  height: 680px;
   width: 100%;
   background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
 }
@@ -23,6 +23,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 150px 0;
+}
+
+abbr {
+  display: none;
 }
 
 .banner-blurb {
@@ -50,9 +54,9 @@ body {
   }
 }
 
-.banner-form {
-  text-align: center;
-}
+// .banner-form {
+//   text-align: center;
+// }
 
 .analysis-input-dropdown {
   height: 60px;
@@ -60,12 +64,16 @@ body {
   border-radius: 30px;
   text-align: right;
   border: none;
-  margin: 25px 0;
+  margin: 0 0 25px 0;
   background-color: white;
   color: $text-blue;
   option {
     padding: 0 15px;
   }
+  label {
+    text-align: left;
+  }
+
 }
 
 .analysis-input-dropdown-wide {
@@ -74,7 +82,7 @@ body {
   border-radius: 30px;
   text-align: right;
   border: none;
-  margin: 25px 0;
+  margin: 0 0 25px 0;
   background-color: white;
   color: $text-blue;
   option {
@@ -178,19 +186,22 @@ body {
 .home-page-upper-footer {
   background-color: $dark-footer-blue;
   width: 100%;
-  height: 625px;
+  height: 200px;
 }
 
 .home-page-lower-footer {
   background-color: $light-footer-blue;
   width: 100%;
-  height: 625px;
+  height: 420px;
 }
 
 .light-footer-links {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  .header {
+    text-decoration: underline;
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -217,6 +228,7 @@ body {
   }
   .logo-text {
     margin-top: -5px;
+    color: white;
   }
   .logo-background {
     border: white 2px solid;
