@@ -54,7 +54,7 @@ class BoroughsController < ApplicationController
     @bookmark.user = current_user
     p @bookmark
     if @bookmark.save
-      redirect_to borough_path(@borough)
+      redirect_to request.referer
     end
   end
 
