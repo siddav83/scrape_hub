@@ -6,13 +6,13 @@ class BoroughsController < ApplicationController
     @boroughs = @boroughs.income_max(params[:search][:income_max])
     @boroughs = @boroughs.income_min(params[:search][:income_min])
     @top_income = @boroughs.order(gross_income: :desc).first
-    @companies = Company.category_search(params[:search][:category])
+    @companies = Company.where(category: params[:search][:category])
   end
 
   def show
     #@companies = @borough.companies
     @bookmark = Bookmark.where(user: current_user).find_by(borough: @borough)
-    @companies = @borough.companies.where(category: params[:category])
+    @companies = @borough.companies.where(category: params[:category].capitalize)
     @markers = { lat: @borough.latitude.to_s, lng: @borough.longitude.to_s }
   end
 
