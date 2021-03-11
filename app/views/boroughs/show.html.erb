@@ -37,34 +37,29 @@
             </div>
           </div>
         </div>
+        <div class="show-map">
+          <!-- <div class="show-map" style="background-image: url('<%= image_path  %>')"></div> -->
+          <div id="map"
+              style="height: 470px; min-width: 371px; border-radius: 15px;"
+              data-markers="<%= @markers.to_json %>"
+              data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+        </div>
 
+      </div>
+      <br>
 
+        <h4>Business Information </h4>
+        <p><%= @borough.description %></p>
+        <br>
+        <h4>Competition Analysis</h4>
+        <p>
+          <div class="">
+            <%= render "shared/company_analysis", companies: @companies %>
+          </div>
+        </p>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="container">
-      <h4>Business Information </h4>
-      <p><%= @borough.description %></p>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="container">
-      <h4>Competition Analysis</h4>
-      <div class="">
-        <%= render "shared/company_analysis", companies: @companies %>
-      </div>
-    </div>
-  </div>
-
-  <%# <div class="row">
-    <div class="container">
-      <div class="flourish-embed flourish-map" data-src="visualisation/5530599">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-      </div>
-    </div>
-  </div>  %>
+ 
 </body>
