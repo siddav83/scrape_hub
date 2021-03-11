@@ -117,7 +117,7 @@
   width: 250px;
 }
 .analysis-borough {
-  padding-left: 10px;
+  padding: 20px 0px 20px 10px;
 }
 
 
@@ -127,4 +127,11 @@
 .prime-head {
   color: white;
 }
-
+.comp-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+.bname-show {
+  border-radius: 0px;
+}

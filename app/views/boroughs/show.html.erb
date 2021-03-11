@@ -9,7 +9,7 @@
         <div class="show-page">
           <div class="borough-details">
             <div class="bookmark-title">
-              <h3 class="borough-name"><%= @borough.name %> </h3>
+              <h3 class="borough-name bname-show"><%= @borough.name %> </h3>
               <div>
                 <% if @bookmark.nil? %>
                 <%= link_to bookmark_path(@borough,category: params[:category]), method: :post, remote: true do %>
@@ -29,7 +29,6 @@
           </div>
 
           <div class="show-map">
-            <!-- <div class="show-map" style="background-image: url('<%= image_path "COL.png" %>')"></div> -->
             <div id="map"
                 style="height: 470px; min-width: 371px; border-radius: 15px;"
                 data-markers="<%= @markers.to_json %>"
@@ -37,7 +36,6 @@
             </div>
           </div>
         </div>
-
         <div class="show-map">
           <div id="map"
               style="height: 470px; min-width: 371px; border-radius: 15px;"
@@ -57,9 +55,20 @@
             <%= render "shared/company_analysis", companies: @companies %>
           </div>
         </p>
-
-
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <br>
+        <h4>BUSINESS INFORMATION</h4>
+        <p><%= @borough.description %></p>
+      <br>
+        <h4>COMPETITION ANALYSIS</h4>
+      <div class="comp-data">
+        <%= render "shared/company_analysis", companies: @companies %>
+        <div class="flourish-embed flourish-map" data-src="visualisation/5530599"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      </div>
+     </div>
   </div>
 </body>
