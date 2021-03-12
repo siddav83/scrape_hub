@@ -29,13 +29,13 @@
                   <%= f.input :income_min,
                               label: false,
                               prompt: "Select Minimum Income",
-                              collection: [ 20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                              collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
                               input_html: { class: "analysis-input-dropdown" },
                               required: true %>
                   <%= f.input :income_max,
                               label: false,
                               prompt: "Select Maximum Income",
-                              collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                              collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
                               input_html: { class: "analysis-input-dropdown" },
                               required: true, display: :none %>
                 </div>
