@@ -12,6 +12,7 @@
     <meta name="description" content="<%= description %>">
     <meta name="keywords" content="...">
     <meta property="og:title" content="<%= title %>">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.scrapehub.xyz">
     <meta property="og:description" content="<%= description %>">
 
@@ -20,12 +21,11 @@
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dlm5qwdjs/image/upload/v1615228203/ScrapeHubFavicon_gihxls.png"/>
+    <%= favicon_link_tag %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
