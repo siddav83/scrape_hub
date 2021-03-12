@@ -29,13 +29,13 @@
                   <%= f.input :income_min,
                               label: false,
                               prompt: "Select Minimum Income",
-                              collection: [ 20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                              collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
                               input_html: { class: "analysis-input-dropdown" },
                               required: true %>
                   <%= f.input :income_max,
                               label: false,
                               prompt: "Select Maximum Income",
-                              collection: [20_000, 25_000, 30_000, 35_000, 40_000, 45_000, 50_000, 55_000, 60_000],
+                              collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
                               input_html: { class: "analysis-input-dropdown" },
                               required: true, display: :none %>
                 </div>
@@ -90,39 +90,39 @@
               <tbody>
                 <tr>
                   <td class="table-data-borough">Date Of Incoporation</td>
-                  <td>XX</td>
-                  <td>XX</td>
-                  <td>X.xx</td>
+                  <td>2009</td>
+                  <td>1987</td>
+                  <td>2020</td>
                 </tr>
                 <tr>
                   <td class="table-data-borough"> CEO </td>
-                  <td>XX</td>
-                  <td>XX</td>
-                  <td>X.xx</td>
+                  <td>David Siddle</td>
+                  <td>Dan the Man</td>
+                  <td>Alec LeadDev</td>
                 </tr>
                 <tr>
                   <td class="table-data-borough"> Number of Employes</td>
-                  <td>XX</td>
-                  <td>XX</td>
-                  <td>X.xx</td>
+                  <td>110</td>
+                  <td>500</td>
+                  <td>1100</td>
                 </tr>
                 <tr>
                   <td class="table-data-borough"> Turnover</td>
-                  <td>XX</td>
-                  <td>XX</td>
-                  <td>X.xx</td>
+                  <td>100 m</td>
+                  <td>24m</td>
+                  <td>10</td>
                 </tr>
                 <tr>
                   <td class="table-data-borough"> Profit </td>
-                  <td>XX</td>
-                  <td>XX</td>
-                  <td>X.xx</td>
+                  <td>15m</td>
+                  <td>3m</td>
+                  <td>1m</td>
                 </tr>
                 <tr>
                   <td class="table-data-borough"> Others</td>
-                  <td>XX</td>
-                  <td>XX</td>
-                  <td>X.xx</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
                 </tr>
               </tbody>
             </table>

@@ -1,0 +1,14 @@
+.blog-post {
+  color: $text-blue;
+}
+
+.blog-title {
+  padding: 25px;
+  background-image: linear-gradient(to bottom right, $banner-turquoise, $banner-blue);
+  border-radius: 25px;
+  h1 {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+}
