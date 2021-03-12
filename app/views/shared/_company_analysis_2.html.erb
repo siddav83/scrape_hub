@@ -8,7 +8,7 @@
       <th class="analysis-borough">Turnover<br>(2019)</th>
       <th class="analysis-borough">Profit<br>(2019)</th>
       <th class="analysis-borough">Margin<br>(2019)</th>
-      <th class="analysis-borough">Members</th>
+      <th class="analysis-borough">Members<br></th>
     </tr>
   </thead>
   <tbody>
@@ -21,7 +21,7 @@
         <td class="analysis-data"><%= company.turnover %>m</td>
         <td class="analysis-data"><%= company.profit %>m</td>
         <td class="analysis-data"><%= ((company.profit / company.turnover)*100).ceil %>%</td>
-        <td class="analysis-data"><%= company.members %>m</td>
+        <td class="analysis-data"><%= company.members %>K</td>
       </tr>
     <% end %>
   </tbody>
