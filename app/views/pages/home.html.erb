@@ -3,16 +3,12 @@
     <div class="home-main-banner">
       <div class="container">
         <div class="home-banner-content">
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="banner-blurb">
-              <br>
-              <br>
-              <br>
               <h3><strong>Scrape Hub</strong> will give you piece of mind while you build your business</h3>
-              <br>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-12 col-md-6 col-lg-8">
             <div class="banner-form">
               <h4> Choose your business </h4>
               <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
@@ -74,7 +70,7 @@
               </div>
             </div>
           </div>
-
+          <!--
           <div class="">
             <table class="data-comparison-table">
               <thead>
@@ -127,6 +123,7 @@
               </tbody>
             </table>
           </div>
+          -->
         </div>
       </div>
     </div>
