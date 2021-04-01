@@ -1,144 +1,127 @@
-<body class="top-bar-transparent-ident">
-  <div class="row">
-    <div class="home-main-banner">
-      <div class="container">
-        <div class="home-banner-content">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="banner-blurb">
-              <h3><strong>Scrape Hub</strong> will give you piece of mind while you build your business</h3>
+<body class="top-bar-transparent">
+  <div class="banner-stripe">
+    <div class="container">
+      <div class="banner-content">
+        <div class="banner-left">
+          <h3><strong>ScrapeHub</strong> will give you piece of mind while you build your business</h3>
+          <br>
+          <p>Be sure about your competition, your projected turnover and how to expand in the future</p>
+        </div>
+        <div class="banner-right">
+          <h4> Choose your business </h4>
+          <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
+            <div class="category-dropdown">
+              <%= f.input :category,
+                            label: false,
+                            prompt: "Select Business Category",
+                            collection: Company.all.pluck(:category).uniq,
+                            input_html: { class: "analysis-input-dropdown-wide" },
+                            required: true %>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-8">
-            <div class="banner-form">
-              <h4> Choose your business </h4>
-              <%= simple_form_for :search, url: boroughs_path, method: :get do |f| %>
-                <div class="d-flex justify-content-between">
-                  <%= f.input :category,
-                              label: false,
-                              prompt: "Select Business Category",
-                              collection: Company.all.pluck(:category).uniq,
-                              input_html: { class: "analysis-input-dropdown-wide" },
-                              required: true %>
-                </div>
-                <h4> Choose your customer target </h4>
-                <div class="d-flex justify-content-between">
-                  <%= f.input :income_min,
-                              label: false,
-                              prompt: "Select Minimum Income",
-                              collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
-                              input_html: { class: "analysis-input-dropdown" },
-                              required: true %>
-                  <%= f.input :income_max,
-                              label: false,
-                              prompt: "Select Maximum Income",
-                              collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
-                              input_html: { class: "analysis-input-dropdown" },
-                              required: true, display: :none %>
-                </div>
-                <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
-              <% end %>
+            <h4> Choose your customer target </h4>
+            <div class="income-dropdowns">
+              <div class="income-dropdown">
+                <%= f.input :income_min,
+                            label: false,
+                            prompt: "Select Minimum Income",
+                            collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
+                            input_html: { class: "analysis-input-dropdown" },
+                            required: true %>
+              </div>
+              <div class="income-dropdown">
+                <%= f.input :income_max,
+                            label: false,
+                            prompt: "Select Maximum Income",
+                            collection: [["£20,000", 20_000], ["£25,000", 25_000], ["£30,000", 30_000], ["£35,000", 35_000], ["£40,000", 40_000], ["£45,000", 45_000], ["£50,000", 50_000], ["£55,000", 55_000], ["£60,000", 60_000]],
+                            input_html: { class: "analysis-input-dropdown" },
+                            required: true, display: :none %>
+              </div>
             </div>
-          </div>
+            <%= f.button :submit, "ANALYSE", class: "blue-analyse-button" %>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row">
+  <div class="learn-more-stripe">
     <div class="container">
-      <div class="learn-more-prompt">
+      <div class="learn-more-content">        
         <div class="learn-more-text">
           <h3>Completely understand your market</h3>
           <br>
           <p>Have every detail about the marketplace you are entering right at your fingertips</p>
-        </div>
+        </div>        
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="what-we-do-slide">
-      <div class="container">
-        <div class="how-we-do-it-blurb">
-          <div class="">
-            <div class="text-blue-background">
-              <div class="text-box">
-                <h3>What we do:</h3>
-                <br>
-                <p><strong>ScrapeHub</strong> uses powerful data analysis techniques like <strong>deep learning algorithms</strong> and <strong>neural nets</strong> to define the best position for your workplace.</p>
-                <p>Our understanding of markets and the data that deine them is unmatched.</p>
-              </div>
-            </div>
-          </div>
-          <!--
-          <div class="">
-            <table class="data-comparison-table">
-              <thead>
-                <%# <div class="data-comparison-table-header"> %>
-                  <tr class="what-we-do-table">
-                    <th class="table-data-borough"><strong>Data Types</strong></th>
-                    <th><strong>Competitors</strong> <br> by category</th>
-                    <th><strong>Competitors</strong> <br> by category</th>
-                    <th><strong>Competitors</strong> <br> by category</th>
-                  </tr>
-                <%# </div> %>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="table-data-borough">Date Of Incoporation</td>
-                  <td>2009</td>
-                  <td>1987</td>
-                  <td>2020</td>
-                </tr>
-                <tr>
-                  <td class="table-data-borough"> CEO </td>
-                  <td>David Siddle</td>
-                  <td>Dan the Man</td>
-                  <td>Alec LeadDev</td>
-                </tr>
-                <tr>
-                  <td class="table-data-borough"> Number of Employes</td>
-                  <td>110</td>
-                  <td>500</td>
-                  <td>1100</td>
-                </tr>
-                <tr>
-                  <td class="table-data-borough"> Turnover</td>
-                  <td>100 m</td>
-                  <td>24m</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td class="table-data-borough"> Profit </td>
-                  <td>15m</td>
-                  <td>3m</td>
-                  <td>1m</td>
-                </tr>
-                <tr>
-                  <td class="table-data-borough"> Others</td>
-                  <td>X</td>
-                  <td>X</td>
-                  <td>X</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <%# <div class="row">
-    <div class="home-page-light-blue">
-      <div class="container">
-        <div class="what-we-do-display">
-          <div class="col-4">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure minus nihil vitae quo? Rem harum quis perferendis fuga labore nulla ratione fugit, reiciendis eius? Tempore doloribus sapiente ex nam possimus?</p>
+  <div class="what-we-do-stripe">
+    <div class="container">
+      <div class="what-we-do-content">
+        <div class="what-we-do-left">
+          <div class="what-we-do-text-box">
+            <h3>What we do</h3>
             <br>
+            <p><strong>ScrapeHub</strong> uses powerful data analysis techniques like <strong>deep learning algorithms</strong> and <strong>neural nets</strong> to define the best position for your workplace.</p>
+            <p>Our understanding of markets and the data that deine them is unmatched.</p>
           </div>
+        </div>
+        <div class="what-we-do-right">
+          <table class="data-comparison-table">
+            <thead>
+              <%# <div class="data-comparison-table-header"> %>
+                <tr class="what-we-do-table">
+                  <th class="table-data-borough"><strong>Data Types</strong></th>
+                  <th>Competitor 1</th>
+                  <th>Competitor 2</th>
+                  <th>Competitor 3</th>
+                </tr>
+              <%# </div> %>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-data-borough">Date Of <br>Incoporation</td>
+                <td>2009</td>
+                <td>1987</td>
+                <td>2020</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">CEO</td>
+                <td>David Siddle</td>
+                <td>Dan the Man</td>
+                <td>Alec LeadDev</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Number of <br>Employes</td>
+                <td>110</td>
+                <td>500</td>
+                <td>1100</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Turnover (£)</td>
+                <td>100m</td>
+                <td>24m</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Profit (£)</td>
+                <td>15m</td>
+                <td>3m</td>
+                <td>1m</td>
+              </tr>
+              <tr>
+                <td class="table-data-borough">Others</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div> %>
+  </div>
+
+
 </body>
