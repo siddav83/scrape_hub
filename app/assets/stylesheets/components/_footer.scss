@@ -40,8 +40,13 @@
   }
 }
 
+.white-line {
+  border-top: 1px solid rgba(256, 256, 256, 1);
+}
+
 .footer-logo {
   display: flex;
+  justify-content: space-between;
   color: white;
   align-items: center;
   p {
@@ -62,5 +67,8 @@
 @media (min-width: 40em) {
   .light-footer-links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer-logo {
+    justify-content: right;
   }
 }
