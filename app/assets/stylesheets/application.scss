@@ -25,26 +25,26 @@
   margin: 0 auto;
 }
 
-@media (min-width: 576) {
+@media (min-width: 576px) {
   .container {
-    max-width: 540;
+    max-width: 540px;
   }
 }
 
-@media (min-width: 768) {
+@media (min-width: 768px) {
   .container {
-    max-width: 720;
+    max-width: 720px;
   }
 }
 
-@media (min-width: 992) {
+@media (min-width: 992px) {
   .container {
-    max-width: 960;
+    max-width: 960px;
   }
 }
 
-@media (min-width: 1200) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1140;
+    max-width: 1140px;
   }
 }

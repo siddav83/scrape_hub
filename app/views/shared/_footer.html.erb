@@ -1,4 +1,4 @@
-<div class="row">
+<%# <div class="row"> %>
   <div class="big-footer">
     <div class="home-page-upper-footer">
       <div class="container">
@@ -12,30 +12,38 @@
     <div class="home-page-lower-footer">
       <div class="container">
         <div class="light-footer-links">
-          <ul>
-            <li class="header">Solutions</li>
-            <li><%= link_to "Data", root_path %></li>
-            <li><%= link_to "Sales", root_path %></li>
-            <li><%= link_to "Pricing", root_path %></li>
-          </ul>
+          <div class="footer-list-groups">
             <ul>
-            <li class="header">Company</li>
-            <li><%= link_to "About", root_path %></li>
-            <li><%= link_to "Careers", root_path %></li>
-            <li><%= link_to "Press", root_path %></li>
-          </ul>
+              <li class="header">Solutions</li>
+              <li><%= link_to "Data", root_path %></li>
+              <li><%= link_to "Sales", root_path %></li>
+              <li><%= link_to "Pricing", root_path %></li>
+            </ul>
+          </div>
+          <div class="footer-list-groups">
             <ul>
-            <li class="header">Follow</li>
-            <li><%= link_to "Twitter", root_path %></li>
-            <li><%= link_to "Facebook", root_path %></li>
-            <li><%= link_to "Github", root_path %></li>
-          </ul>
+              <li class="header">Company</li>
+              <li><%= link_to "About", root_path %></li>
+              <li><%= link_to "Careers", root_path %></li>
+              <li><%= link_to "Press", root_path %></li>
+            </ul>
+          </div>
+          <div class="footer-list-groups">
             <ul>
-            <li class="header">Legal</li>
-            <li><%= link_to "Claim", root_path %></li>
-            <li><%= link_to "Privacy", root_path %></li>
-            <li><%= link_to "Terms", root_path %></li>
-          </ul>
+              <li class="header">Follow</li>
+              <li><%= link_to "Twitter", root_path %></li>
+              <li><%= link_to "Facebook", root_path %></li>
+              <li><%= link_to "Github", root_path %></li>
+            </ul>
+          </div>
+          <div class="footer-list-groups">
+            <ul>
+              <li class="header">Legal</li>
+              <li><%= link_to "Claim", root_path %></li>
+              <li><%= link_to "Privacy", root_path %></li>
+              <li><%= link_to "Terms", root_path %></li>
+            </ul>
+          </div>
         </div>
         <div class="footer-logo">
           <%= link_to "#", class: "navbar-brand" do %>
@@ -51,4 +59,4 @@
       <%# <span></span> %>
     </div>
   </div>
-</div>
+<%# </div> %>
