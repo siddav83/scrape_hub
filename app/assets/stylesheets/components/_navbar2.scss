@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 .5em;
+  margin: .5em;
   color: black;
   overflow: hidden;
   a {
@@ -23,7 +23,7 @@
   border: black 2px solid;
   color: black;
   font-size: 2.5em;
-  margin-top: 5px;
+  // margin-top: .5em;
   padding: 0.125em .25em;
 }
 
@@ -36,7 +36,12 @@
   width: 3.2rem;
   height: 3.2rem;
   cursor: pointer;
+  border-radius: 3px;
   // transition: all 0.5s ease-in-out;
+}
+
+.menu-toggle:hover {
+  background-color: rgba($dark-footer-blue, 0.5);
 }
 
 .hamburger {
@@ -69,6 +74,7 @@
   border-radius: 1.5em;
   border: black 2px solid;
   padding: 0.4em 2em;
+  margin: auto;
 }
 
 .top-bar-transparent {
@@ -106,6 +112,39 @@
   }
 }
 
+.navbar-dropdown-stripe {
+  display: none; // to be togglable
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba($dark-footer-blue, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: .5s;
+}
+
+.navbar-dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  padding: .5em
+}
+
+.navbar-dropdown {
+  text-align: center;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;  
+}
+
+.dropdown-line {
+  z-index: 100;
+  color: white;
+  border-bottom: 1px solid white;
+}
 // IMPORTANT mixing mobile first and desktop first media queries is bad mmmmkay
 
 @media (max-width: 425px) {
