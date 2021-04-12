@@ -1,4 +1,6 @@
 .navbar-stripe {
+  width: 100%;
+  position: absolute;
   background-color: transparent;
 }
 
@@ -8,30 +10,65 @@
   align-items: center;
   margin: 0 .5em;
   color: black;
+  overflow: hidden;
   a {
     color: black;
-  }
-  a:not(:first-child) {
-    display: none;
   }
 }
 
 .logo {
-  width: 4em;
-  height: 2.75em;
+  line-height: 1;
+  // width: 3em;
+  // height: 1.75em;
   border: black 2px solid;
-}
-
-.logo-text {
   color: black;
-  text-align: center;
-  font-size: 40px;
-  margin-top: -5px;
+  font-size: 2.5em;
+  margin-top: 5px;
+  padding: 0.125em .25em;
 }
 
-.burger {
-  padding: .25em;
-  border: solid 2px black;
+.menu-toggle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  // transition: all 0.5s ease-in-out;
+}
+
+.hamburger {
+  width: 2em;
+  height: .25em;
+  background-color: #fff;
+  border: none;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 2em;
+  height: .25em;
+  background-color: #fff;
+  border: none;
+}
+
+.hamburger::before {
+  transform: translateY(-.5em);
+}
+
+.hamburger::after {
+  transform: translateY(.5em);
+}
+
+.login-out {
+  font-size: 1em;
+  border-radius: 1.5em;
+  border: black 2px solid;
+  padding: 0.4em 2em;
 }
 
 .top-bar-transparent {
@@ -54,6 +91,9 @@
   .log-out-navbar-button:hover {
     border: rgba(0, 0, 0, 0.4) 2px solid;
   }
+  .login-out {
+    border: white 2px solid;
+  }
   a {
     color: white;
   }
@@ -66,16 +106,31 @@
   }
 }
 
+// IMPORTANT mixing mobile first and desktop first media queries is bad mmmmkay
+
+@media (max-width: 425px) {
+  .navbar-content a:not(:first-child) {
+    display: none;
+  }
+}
+
+// END HORRIBLE MIXING
+
 @media (min-width: 40em) {
+  .navbar-stripe {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   .navbar-content {
     margin: 0 1em;
-    display: block;
+    display: flex;
   }
   .logo-background {
     width: 5em;
     height: 2.75em;
   }
-  .burger {
+  .menu-toggle {
     display: none;
   }
 }
