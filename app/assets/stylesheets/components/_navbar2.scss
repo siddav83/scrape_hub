@@ -1,0 +1,81 @@
+.navbar-stripe {
+  background-color: transparent;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 .5em;
+  color: black;
+  a {
+    color: black;
+  }
+  a:not(:first-child) {
+    display: none;
+  }
+}
+
+.logo {
+  width: 4em;
+  height: 2.75em;
+  border: black 2px solid;
+}
+
+.logo-text {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  margin-top: -5px;
+}
+
+.burger {
+  padding: .25em;
+  border: solid 2px black;
+}
+
+.top-bar-transparent {
+  background-color: transparent;
+  .logo-text {
+    color: white;
+  }
+  .logo {
+    border: white 2px solid;
+  }
+  .log-out-text {
+    color: white;
+  }
+  .log-out-text:hover {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .log-out-navbar-button {
+    border: white 2px solid;
+  }
+  .log-out-navbar-button:hover {
+    border: rgba(0, 0, 0, 0.4) 2px solid;
+  }
+  a {
+    color: white;
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .burger {
+    color: white;
+    border: solid 2px white;
+  }
+}
+
+@media (min-width: 40em) {
+  .navbar-content {
+    margin: 0 1em;
+    display: block;
+  }
+  .logo-background {
+    width: 5em;
+    height: 2.75em;
+  }
+  .burger {
+    display: none;
+  }
+}

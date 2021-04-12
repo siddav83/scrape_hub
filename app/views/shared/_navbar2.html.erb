@@ -1,0 +1,30 @@
+<div class="navbar-stripe fixed-top">
+  <div class="container">
+    <div class="navbar-content">
+      <%= link_to "/", class: "navbar-brand" do %>
+        <div class="logo" id="logo">
+          <p class="logo-text">S|H</p>
+        </div>
+      <% end %>
+      <%= link_to "Home", root_path %>
+      <%= link_to "About Us", about_path %>
+      <%= link_to "Blog", blog_path %>
+      <%= link_to "Bookmarks", signed_in? ? my_bookmarks_path(current_user) : new_user_session_path %>
+
+      <% if user_signed_in? %>
+        <%= link_to destroy_user_session_path, method: :delete do %>
+          <div class="log-out-navbar-button" id="login-out">
+            <p class="log-out-text">Log Out</p>
+          </div>
+        <% end %>
+      <% else %>
+        <%= link_to new_user_session_path do %>
+          <div class="log-out-navbar-button" id="login-out">
+            <p class="log-out-text">Log In</p>
+          </div>
+        <% end %>
+      <% end %>
+      <i class="burger fas fa-bars fa-2x"></i>
+    </div>
+  </div>
+</div>
