@@ -18,11 +18,14 @@ const initUpdateNavbarOnScroll = () => {
   }
 }
 
-const menuToggle = document.querySelector(".menu-toggle");
-const overlay = document.getElementsByClassName("navbar-dropdown-stripe");
-menuToggle.addEventListener('click', () => {
-  // 
-  console.log("Hello!");
-})
+
+const menuToggles = document.querySelectorAll(".menu-toggle");
+const overlay = document.querySelector(".navbar-dropdown-stripe");
+
+function toggleOverlay() {
+  overlay.classList.toggle("overlay-hidden");  
+}
+
+menuToggles.forEach(toggle => toggle.addEventListener('click', toggleOverlay));
 
 export { initUpdateNavbarOnScroll };

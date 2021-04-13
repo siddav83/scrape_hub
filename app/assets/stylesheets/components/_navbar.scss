@@ -1,102 +1,102 @@
-.navbar-lewagon {
-  background-color: transparent;
-  transition: 0.5s background-color ease;
-  justify-content: space-between;
-  margin: 0 20px;
-  text-decoration: none;
-  color: black;
-  a {
-    color: black;
-  }
-  a:hover {
-    color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-  }
-}
+// .navbar-lewagon {
+//   background-color: transparent;
+//   transition: 0.5s background-color ease;
+//   justify-content: space-between;
+//   margin: 0 20px;
+//   text-decoration: none;
+//   color: black;
+//   a {
+//     color: black;
+//   }
+//   a:hover {
+//     color: rgba(0, 0, 0, 0.6);
+//     text-decoration: none;
+//   }
+// }
 
-.top-bar {
-  background-color: white;
-}
+// .top-bar {
+//   background-color: white;
+// }
+
+// // .top-bar-transparent {
+// //   background-color: transparent;
+// // }
+
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+// .logo-background {
+//   width: 107px;
+//   height: 54px;
+//   border: black 2px solid;
+// }
+
+// .logo-text {
+//   color: black;
+//   text-align: center;
+//   font-size: 40px;
+//   margin-top: -5px;
+// }
+
+// .navbar_links {
+//   display: flex;
+//   justify-content: space-between;
+//   color: black;
+// }
+
+// .log-out-navbar-button {
+//   text-align: center;
+//   justify-content: center;
+//   height: 40px;
+//   width: 130px;
+//   font-size: 20px;
+//   border-radius: 20px;
+//   border: black 2px solid;
+//   color: black;
+//   &:hover {
+//     border: rgba(0, 0, 0, 0.6) 2px solid;
+//   }
+// }
+
+// .log-out-text {
+//   margin-top: 5px;
+//   text-decoration: none;
+//   &:hover {
+//     color: rgba(0, 0, 0, 0.6);
+//     text-decoration: none;
+//   }
+// }
 
 // .top-bar-transparent {
 //   background-color: transparent;
+//   .logo-text {
+//     color: white;
+//   }
+//   .logo-background {
+//     border: white 2px solid;
+//   }
+//   .log-out-text {
+//     color: white;
+//   }
+//   .log-out-text:hover {
+//     color: rgba(0, 0, 0, 0.4);
+//   }
+//   .log-out-navbar-button {
+//     border: white 2px solid;
+//   }
+//   .log-out-navbar-button:hover {
+//     border: rgba(0, 0, 0, 0.4) 2px solid;
+//   }
+//   a {
+//     color: white;
+//   }
+//   a:hover {
+//     color: rgba(0, 0, 0, 0.4);
+//   }
 // }
-
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.logo-background {
-  width: 107px;
-  height: 54px;
-  border: black 2px solid;
-}
-
-.logo-text {
-  color: black;
-  text-align: center;
-  font-size: 40px;
-  margin-top: -5px;
-}
-
-.navbar_links {
-  display: flex;
-  justify-content: space-between;
-  color: black;
-}
-
-.log-out-navbar-button {
-  text-align: center;
-  justify-content: center;
-  height: 40px;
-  width: 130px;
-  font-size: 20px;
-  border-radius: 20px;
-  border: black 2px solid;
-  color: black;
-  &:hover {
-    border: rgba(0, 0, 0, 0.6) 2px solid;
-  }
-}
-
-.log-out-text {
-  margin-top: 5px;
-  text-decoration: none;
-  &:hover {
-    color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-  }
-}
-
-.top-bar-transparent {
-  background-color: transparent;
-  .logo-text {
-    color: white;
-  }
-  .logo-background {
-    border: white 2px solid;
-  }
-  .log-out-text {
-    color: white;
-  }
-  .log-out-text:hover {
-    color: rgba(0, 0, 0, 0.4);
-  }
-  .log-out-navbar-button {
-    border: white 2px solid;
-  }
-  .log-out-navbar-button:hover {
-    border: rgba(0, 0, 0, 0.4) 2px solid;
-  }
-  a {
-    color: white;
-  }
-  a:hover {
-    color: rgba(0, 0, 0, 0.4);
-  }
-}
